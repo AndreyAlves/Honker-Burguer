@@ -1,0 +1,1495 @@
+body{
+	margin:auto;
+	background-image:url("../Imagens/fundo6.jpg");
+	font-family:Berlin Sans FB;
+}
+
+/*_____________________________________  Icones _____________________________________*/
+
+.iconesAdm{
+	width:25px;
+	height:25px;
+	margin-left:2px
+}
+
+#iconesAdmDelete{
+	width:30px;
+	height:30px;
+	margin-top:5px;
+}
+
+/*************************/
+
+#principal{
+	width:1300px;
+	height:auto;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom,:auto;
+	border-radius:30px;
+	border:5px dotted #FFFF00;
+}
+
+/*_____________________________________ Header _____________________________________*/
+
+header{
+	width:100%;
+	height:150px;
+	background-color:#FF8C00;
+	margin:auto;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+	z-index:5;
+	border-radius:30px 30px 0px 0px;
+}
+
+
+/*_____________________________________ Conteúdo Header _____________________________________*/
+
+
+#conteudoheader{
+	width:100%;
+	height:150px;
+	border:0px solid;
+	
+}
+
+#titulocms{
+	width:700px;
+	height:100px;
+	margin-top:20px;
+	margin-left:20px;
+	border:0px solid;
+	color:#fff;
+	float:left;
+}
+
+#titulocms p{
+	font-size:40px;
+	margin-top:30px;
+}
+
+#titulocms a{
+	color:#fff;
+	text-decoration:none;
+}
+
+#titulocms:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+	transition:0.8s;
+	margin-left:70px;
+	text-decoration:underline;
+}
+
+#logo{
+	width:120px;
+	height:120px;
+	border:0px solid;
+	margin-top:20px;
+	margin-right:80px;
+	float:right;
+}
+
+#logoimg{
+	width:120px;
+	height:120px;
+	border-radius:20px;
+}
+
+/*_____________________________________ Conteúdo Nav _____________________________________*/
+
+nav{
+	width:100%;
+	height:150px;
+	border:0px solid;
+	filter:alpha(opacity=70);
+	margin:auto;
+	opacity:0.7;
+	background-color:#800000;
+}
+
+#conteudonav{
+	width:100%;
+	height:auto;
+
+}
+
+#conteudonav p{
+	color:#FFFF00;
+}
+
+.adm{
+	width:130px;
+	height:125px;
+	border:0px solid;
+	margin-left:100px;
+	float:left;
+}
+
+.iconesmenu{
+	margin-left:-10px;
+}
+
+.iconesmenu:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	transition:0.8s;
+}
+
+.iconesmenu2{
+	margin-left:-10px;
+	background-color:#B3B3B3;
+	border-radius:100%;
+}
+
+.iconesmenu3{
+	margin-left:-10px;
+	background-color:#B3B3B3;
+	border-radius:100%;
+}
+
+.imgadm{
+	width:80px;
+	height:80px;
+	border:0px solid;
+	margin-top:5px;
+	margin-left:15px;
+	margin-right:auto;
+	margin-bottom:auto;
+	float:left;
+}
+
+.textadm{
+	width:125px;
+	height:20px;
+	float:left;
+	margin-top:8px;
+	border:0px solid;
+
+}
+
+.textadm p{
+	margin-top:2px;
+	margin-left:1px;
+	font-size:15px;
+}
+
+.textadm a{
+	margin-top:2px;
+	margin-left:1px;
+	font-size:15px;
+	color:#FFFF00;
+	text-decoration:none;
+}
+
+.textadm:hover{
+	background-color:#B22222;
+	border-radius:5px;
+	transition:1s;
+	box-shadow:inset 000 60px #000;
+}
+
+.textadm2{
+	width:125px;
+	height:20px;
+	float:left;
+	margin-top:8px;
+	border:0px solid;
+}
+
+.textadm2 p{
+	margin-top:2px;
+	margin-left:1px;
+	font-size:15px;
+}
+
+.textadm2 a{
+	margin-top:2px;
+	margin-left:1px;
+	font-size:15px;
+	color:#B3B3B3;
+	text-decoration:none;
+}
+
+.textadm3{
+	width:125px;
+	height:20px;
+	float:left;
+	margin-top:8px;
+	border:0px solid;
+}
+
+.textadm3 p{
+	margin-top:2px;
+	margin-left:1px;
+	font-size:15px;
+}
+
+.textadm3 a{
+	margin-top:2px;
+	margin-left:1px;
+	font-size:15px;
+	color:#B3B3B3;
+	text-decoration:none;
+}
+/*_____________________________________ Login _____________________________________*/
+
+#login{
+	width:280px;
+	height:110px;
+	border:0px solid #fff;
+	margin-top:5px;
+	margin-left:80px;
+	border-radius:5px;
+	float:left;
+}
+
+#bemvindo{
+	width:135px;
+	height:35px;
+	border:0px solid;
+	float:left;
+}
+
+#bemvindo p {
+	font-size:20px;
+	margin-top:5px;
+	margin-left:10px;
+	color:#fff;
+}
+
+#nomeusuario{
+	width:auto;
+	height:35px;
+	margin-left:0px;
+	border:0px solid;
+	float:left;
+}
+
+#nomeusuario p{
+	font-size:20px;
+	margin-top:5px;
+	margin-left:0px;
+	color:#fff;
+}
+
+#btnlogout{
+	margin-top:55px;
+	float:right;
+}
+
+#botaologout{
+	width:50px;
+	height:50px;
+	margin-top:0px;
+	background-color:#500000;
+	color:#FFFF00;
+	border-radius:100px;
+}
+
+/*_____________________________________ Conteúdo _____________________________________*/
+
+section{
+	height:auto;
+	background-color:#fff;
+	border:0px solid;
+}
+
+#conteudosection{
+	width:900px;
+	height:550px;
+	margin-left:200px;
+	border:0px solid;
+}
+
+#conteudoimg{
+	width:auto;
+	border:0px solid;
+	margin-top:50px;
+	margin-left:50px;
+	float:left;
+	border:0px solid;
+}
+
+.imagemconteudoadm{
+	width:150px;
+	height:150px;
+	border:0px solid;
+}
+
+#imghomeadm{
+	width:125px;
+	height:125px;
+}
+
+#imgbandaadm{
+	width:125px;
+	height:125px;
+}
+
+#imgsobreadm{
+	width:125px;
+	height:125px;
+}
+
+#conteudotext{
+	width:200px;
+	height:459px;
+	border:0px solid;
+	margin-top:50px;
+	margin-left:20px;
+	float:left;
+}
+
+.textconteudoadm{
+	width:200px;
+	height:80px;
+	margin-top:50px;
+	background-color:#D3D3D3;
+	border:1px solid #C3C3C3;
+	border-radius:15px;
+	font-size:20px;
+	text-align:center;
+	color:#FF8C00;
+}
+
+#conteudoimg2{
+	width:auto;
+	border:0px solid;
+	margin-top:50px;
+	margin-left:50px;
+	float:left;
+}
+
+.imagemconteudoadm2{
+	width:150px;
+	height:150px;
+	border:0px solid;
+}
+
+#imgpromocoesadm{
+	width:125px;
+	height:125px;
+}
+
+#imgambientesadm{
+	width:125px;
+	height:125px;
+}
+
+#imglanchedomesadm{
+	width:125px;
+	height:125px;
+}
+
+#conteudotext2{
+	width:200px;
+	height:459px;
+	border:0px solid;
+	margin-top:50px;
+	margin-left:20px;
+	float:left;
+}
+
+.textconteudoadm2{
+	width:200px;
+	height:120px;
+	margin-top:30px;
+	border:0px solid;
+}
+
+
+/* ========================================= SAUDAÇÕES ========================================= */
+
+#sectionsaudacoes{
+	height:575px;
+	background-image:url("../Imagens/fundo6.jpg");
+	border:0px solid;
+}
+
+#conteudosectionsaudacoes{
+	width:900px;
+	height:550px;
+	margin-top:-20px;
+	margin-left:200px;
+	border:0px solid;
+}
+
+#saudacoes{
+	width:700px;
+	height:200px;
+	margin:auto;
+	border-radius:15px;
+	background-color:#FF8C00;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+	border:0px solid;
+}
+
+#saudacoes p{
+	font-size:150px;
+	text-align:center;
+	margin-top:20px;
+	color:#fff;
+}
+
+#titulositecms{
+	width:1100px;
+	height:200px;
+	margin-left:-100px;
+	margin-top:150px;
+	border:1px solid;
+	border-radius:15px;
+	background-color:#000;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+#imgtitulositecms{
+	width:1000px;
+	height:200px;
+	margin-left:50px;
+}
+
+#contsaudacoes{
+	width:300px;
+	height:100px;
+	margin:auto;
+	margin-top:-125px;
+	border-radius:0px 0px 15px 15px;
+	background-color:#FF8C00;
+	border:0px solid;
+}
+
+#contsaudacoes p{
+	font-size:80px;
+	text-align:center;
+}
+
+/************** Botao Salvar ***************/
+#salvar{
+	width:150px;
+	height:50px;
+	margin-left:300px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+/*****************************/
+
+/* ========================================= Banda Adm ========================================= */
+
+#conteudosection_bandaAdm{
+	width:1200px;
+	height:auto;
+	margin-left:50px;
+	margin-top:-50px;
+	border:0px solid;
+}
+
+#tituloinformacoes{
+	width:700px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin:auto;
+}
+
+#tituloinformacoes p{
+	font-size:50px;
+	text-align:center;
+}
+
+.areadetexto{
+	width:200px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:10px;
+	margin-left:250px;
+	border:0px solid;
+}
+
+.areadetexto p{
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.areadoinput{
+	width:auto;
+	height:auto;
+	margin-top:-45px;
+	margin-right:250px;
+	float:right;
+	border:0px solid;
+}
+
+.areadetexto_integrantes{
+	width:200px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:10px;
+	margin-left:300px;
+	border:0px solid;
+}
+
+.areadetexto_integrantes p{
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.areadoinput_integrantes{
+	width:auto;
+	height:auto;
+	margin-top:-45px;
+	margin-right:300px;
+	float:right;
+	border:0px solid;
+}
+
+.inputtextoBanda{
+	width:450px;
+	resize:none;
+}
+
+.inputBanda{
+	width:450px;
+	height:30px;
+	resize:none;
+}
+
+#salvarBanda{
+	width:150px;
+	height:50px;
+	margin-left:300px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+#titulo_consultaBanda{
+	width:700px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin:auto;
+}
+
+#titulo_consultaBanda p{
+	font-size:50px;
+	margin-left:150px;
+}
+
+.areadetexto_consultaBanda{
+	width:150px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:5px;
+	margin-left:300px;
+	
+}
+
+.areadetexto_consultaBanda p{
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+}
+
+.informacao_consultaBanda{
+	width:500px;
+	height:50px;
+	border:1px solid;
+	float:right;
+	margin-top:-50px;
+	margin-right:300px;
+}
+
+/* ========================================= Sobre Adm ========================================= */
+
+#conteudosection_sobreAdm{
+	width:1200px;
+	height:700px;
+	margin-left:50px;
+	margin-top:-50px;
+	border:0px solid;
+}
+
+#tituloinformacoes_sobre{
+	width:850px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin:auto;
+}
+
+#tituloinformacoes_sobre p{
+	font-size:50px;
+	margin-left:75px;
+}
+
+.areadetexto_sobre{
+	width:200px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:10px;
+	margin-left:250px;
+	
+}
+
+.areadetexto_sobre p{
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.inputtextoSobre{
+	width:450px;
+	resize:none;
+}
+
+.inputSobre{
+	width:450px;
+	height:30px;
+	resize:none;
+}
+
+#salvarSobre{
+	width:150px;
+	height:50px;
+	margin-left:250px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+/* ========================================= Promoção Adm ========================================= */
+
+#section_promocoesAdm{
+	height:1800px;
+	background-color:#fff;
+	border:0px solid;
+}
+
+#conteudosection_promocaoAdm{
+	width:1200px;
+	height:auto;
+	margin-left:50px;
+	margin-top:-50px;
+	border:0px solid;
+}
+
+#tituloinformacoes_promocao{
+	width:700px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin:auto;
+}
+
+#tituloinformacoes_promocao p{
+	font-size:50px;
+	margin-left:75px;
+}
+
+.areadetexto_Promocao{
+	width:200px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:10px;
+	margin-left:300px;
+	
+}
+
+.areadetexto_Promocao p{
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.areadoinput_Promocao{
+	width:300px;
+	height:20px;
+	margin-top:-45px;
+	margin-right:455px;
+	float:right;
+	border:0px solid;
+}
+
+.inputtextoPromocao{
+	width:450px;
+	resize:none;
+}
+
+.inputPromocao{
+	width:450px;
+	height:30px;
+	resize:none;
+}
+
+#salvarPromocao{
+	width:150px;
+	height:50px;
+	margin-left:300px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+/* ========================================= Tabela Nutriconal Promoção ========================================= */
+
+#conteudoinfNutricional_promocao{
+	width:1200px;
+	height:auto;
+	margin-left:50px;
+	margin-top:0px;
+	border:0px solid;
+}
+
+.infNutricionalValores{
+	width:400px;
+	height:auto;
+	margin-left:250px;
+	border:0px solid;
+	float:left;
+}
+
+.infNutricionalValores2{
+	width:400px;
+	height:auto;
+	border:0px solid;
+	float:left;
+}
+
+#tituloinfNutricional_promocao{
+	width:825px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+}
+
+#tituloinfNutricional_promocao p{
+	font-size:50px;
+	text-align:center;
+}
+
+.areadetexto_nutricional{
+	width:150px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:10px;
+	margin-left:0px;
+	
+}
+
+.areadetexto_nutricional p{
+	font-size:20px;
+	text-align:center;
+	margin-top:20px;
+	color:#fff;
+}
+
+.caixadetexto_nutricional{
+	width:230px;
+	height:30px;
+	font-size:20px;
+	resize: none;
+}
+
+.inputtextosPromocao_nutricional{
+	width:150px;
+	height:50px;
+	font-size:30px;
+	margin-top:-50px;
+	margin-right:80px;
+	float:right;
+}
+
+#salvarPromocao_nutricional{
+	width:150px;
+	height:50px;
+	margin-left:200px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+/* ========================================= Ambientes Adm ========================================= */
+
+#conteudosection_ambientesAdm{
+	width:1200px;
+	height:auto;
+	margin-left:50px;
+	margin-top:-50px;
+	border:0px solid;
+}
+
+#tituloinformacoes_ambientes{
+	width:700px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin:auto;
+}
+
+#tituloinformacoes_ambientes p{
+	font-size:50px;
+	margin-left:75px;
+}
+
+.inputtextosAmbientes{
+	width:100%;
+	height:80px;
+	font-size:50px;
+}
+
+.inputAmbientes{
+	width:450px;
+	height:30px;
+	resize:none;
+}
+
+#salvarAmbientes{
+	width:150px;
+	height:50px;
+	margin-left:250px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+/* ========================================= Lanche do mes Adm ========================================= */
+
+#conteudosection_lanchedomesAdm{
+	width:1200px;
+	height:auto;
+	margin-left:50px;
+	margin-top:-50px;
+	border:0px solid;
+}
+
+#tituloinformacoes_lanchedomes{
+	width:700px;
+	height:80px;
+	background-color:#800000;
+	color:#FFFF00;
+	border-radius:10px;
+	margin:auto;
+}
+
+#tituloinformacoes_lanchedomes p{
+	font-size:50px;
+	margin-left:75px;
+}
+
+
+.inputLanchedomes{
+	width:450px;
+	height:30px;
+	resize:none;
+}
+
+#salvarLanchedomes{
+	width:150px;
+	height:50px;
+	margin-left:250px;
+	margin-top:20px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+#caixadetexto_lanchedomes{
+	width:430px;
+	height:30px;
+	font-size:20px;
+	margin-top:5px;
+	margin-left:15px;
+	resize: none;
+}
+
+/* ========================================= Adm. Fale Conosco / CONSULTA ALL ========================================= */
+
+/*_____________________________________ consulta _____________________________________*/
+
+#consulta {
+	width:900px;
+	height:auto;
+	background-color:#FFFFFF;
+	margin:auto;
+	overflow:auto;
+	border:0px solid;
+}
+
+#tblconsulta{
+	width:100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	border:solid 2px;
+	border-color:#000000;
+	border-radius:5px 5px 5px 5px;
+	box-shadow:5px 5px 5px #aaa;
+}
+
+.titulo_tabela_consulta {
+	background-color:#FF8C00;
+	font-family:verdana;
+	font-size:16px;
+	text-align:center;
+	height:50px;
+	color:#ffffff;
+	border-radius:3px 3px 3px 3px;
+
+
+}
+
+.tblconsulta_td{
+	width:100px;
+	border:solid 0px;
+	border-color:#CCCCCC;
+	font-family:verdana;
+	font-size:12px;
+	font-weight:bold;
+	height:30px;
+	text-align:center;
+	border-color:#DCDCDC;
+	background-color:#E8E8E8;
+}
+
+.tblconsulta_tr{
+	max-width:100px;
+	border:solid 1px;
+	border-color:#CCCCCC;
+	font-family:verdana;
+	font-size:12px;
+	font-weight:bold;
+	height:25px;
+	text-align:center;
+	border-color:#DCDCDC;
+	background-color:#ffffff;
+}
+
+.imagem_consulta{
+	width:100px;
+	height:100px;
+}
+
+/* ========================================= Ver Mais ========================================= */
+
+#sectionVermais{
+	height:auto;
+	background-color:#fff;
+	border:0px solid;
+}
+
+#conteudosectionVermais{
+	width:1000px;
+	height:400px;
+	margin-left:150px;
+	border:0px solid;
+}
+
+#headerVermais{
+	width:100%;
+	height:150px;
+	background-color:#F3F3F3;
+	margin:auto;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+	z-index:5;
+	border-radius:30px 30px 0px 0px;
+}
+
+#conteudoheaderVermais{
+	width:100%;
+	height:150px;
+	border:0px solid;
+	
+}
+
+#titulocmsVermais{
+	width:700px;
+	height:100px;
+	margin-top:20px;
+	margin-left:300px;
+	border:0px solid;
+	color:#000;
+	float:left;
+}
+
+#titulocmsVermais p{
+	font-size:50px;
+	margin-top:30px;
+	text-align:center;
+}
+
+#conteudoAreadetexto{
+	width:155px;
+	float:left;
+	margin-left:50px;
+	border:0px solid;
+}
+
+.areadetextoVermais{
+	width:150px;
+	height:50px;
+	border-radius:0px;
+	margin-top:10px;
+	background-color:#DDDDDD;
+	border:1px solid #D3D3D3;
+}
+
+.areadetextoVermais p{
+	font-size:25px;
+	text-align:center;
+	margin-top:0px;
+	color:#000;
+}
+
+#areadetextoVermais_obs{
+	width:150px;
+	height:50px;
+	border-radius:0px;
+	margin-left:0px;
+	margin-top:0px;
+	background-color:#DDDDDD;
+	border:1px solid #D3D3D3;
+}
+
+#areadetextoVermais_obs p{
+	font-size:25px;
+	text-align:center;
+	margin-top:0px;
+	color:#000;
+}
+
+#conteudoAreainfo{
+	width:200px;
+	float:left;
+	border:0px solid;
+}
+
+.areainfoVermais{
+	height:50px;
+	border-radius:0px;
+	margin-top:15px;
+	margin-left:10px;
+}
+
+.areainfoVermais p{
+	font-size:25px;
+	text-align:left;
+	margin-top:0px;
+	color:#000;
+}
+
+#conteudoArea_obs{
+	width:auto;
+	height:auto;
+	float:right;
+	margin-top:10px;
+	border:0px solid;
+}
+
+#areainfoVermais_obs{
+	min-width:380px;
+	max-width:500px;
+	height:auto;
+	border-radius:0px;
+	margin-left:0px;
+	margin-top:0px;
+	overflow:auto;
+	border:0px solid;
+}
+
+#areainfoVermais_obs p{
+	font-size:25px;
+	text-align:left;
+	color:#000;
+}
+
+#areaObs{
+	width:400px;
+	height:auto;
+	border:1px solid;
+}
+
+#botaovoltar{
+	width:50px;
+	height:50px;
+	margin-top:10px;
+	margin-left:-990px;
+	background-color:#A3A3A3;
+	color:#FFFF00;
+	border-radius:100px;
+}
+
+#footerVermais{
+	width:100%;
+	height:50px;
+	margin-top:0px;
+	border:0px solid;
+	background-color:#fff;
+	border-radius:0px 0px 30px 30px;
+}
+
+#footerVermais p{
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	color:#fff;
+}
+
+/* ========================================= Produtos ========================================= */
+
+#conteudoProduto{
+	width:100%;
+	height:auto;
+	border:1px solid #fff;
+}
+
+.inputProduto{
+	width:450px;
+	height:30px;
+	margin-right:50px;
+	resize:none;
+}
+
+.areadoinput_produtos{
+	width:auto;
+	height:auto;
+	margin-top:-45px;
+	margin-right:250px;
+	float:right;
+	border:0px solid;
+}
+
+.areadetexto_produtos{
+	width:200px;
+	height:50px;
+	background-color:#FF8C00;
+	border-radius:10px;
+	margin-left:300px;
+	border:0px solid;
+    font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.areadetexto_produtos p{
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.caixadetexto_produtos{
+	width:300px;
+	height:30px;
+    margin-left:250px;
+	font-size:20px;
+	resize: none;
+}
+
+/* ========================================= Verificações ========================================= */
+
+#conteudoVerificacao{
+	width:100%;
+	height:auto;
+	border:1px solid #fff;
+}
+
+#escolha{
+	width:400px;
+	height:200px;
+	border:1px solid;
+	margin-left:150px;
+	background-color:#D3D3D3;
+	border-radius:300px;
+	color:#C3C3C3;
+}
+
+#escolha p{
+	text-align:center;
+	margin-top:60px;
+	font-size:55px;
+}
+
+#escolha a{
+	text-align:center;
+	margin-top:60px;
+	font-size:55px;
+	color:#FF8C00;
+	text-decoration:none;
+}
+
+#escolha2{
+	width:400px;
+	height:200px;
+	border:1px solid;
+	margin-left:750px;
+	margin-top:-200px;
+	background-color:#D3D3D3;
+	border-radius:300px;
+	color:#C3C3C3;
+}
+
+#escolha2 p{
+	text-align:center;
+	margin-top:60px;
+	font-size:55px;
+	text-decoration:none;
+}
+
+#escolha2 a{
+	text-align:center;
+	margin-top:60px;
+	font-size:55px;
+	color:#FF8C00;
+	text-decoration:none;
+}
+
+#escolha3{
+	width:400px;
+	height:200px;
+	border:1px solid;
+	margin-left:450px;
+	margin-top:50px;
+	background-color:#D3D3D3;
+	border-radius:300px;
+	color:#C3C3C3;
+}
+
+#escolha3 p{
+	text-align:center;
+	margin-top:35px;
+	font-size:55px;
+	text-decoration:none;
+}
+
+#escolha3 a{
+	text-align:center;
+	margin-top:60px;
+	font-size:55px;
+	color:#FF8C00;
+	text-decoration:none;
+}
+.iconeVerificacao{
+	width:400px;
+	height:400px;
+}
+
+/* ========================================= Adm. Usuário ========================================= */
+
+/*_____________________________________ Cadastro _____________________________________*/
+
+#conteudosectionadmusuario{
+	width:100%;
+	height:100%;
+	border:0px solid;
+}
+
+#content {
+	width:250px;
+	height:300px;
+	margin-left:100px;
+	margin-top:0px;
+	float:left;
+}
+
+#cadastro {
+	width:470px;
+	height:auto;
+}
+
+
+#tbllogin{
+	width:250px;
+	height:250px;
+	border:solid 2px;
+	border-color:#000;
+	border-radius:5px 5px 5px 5px;
+	box-shadow:10px 10px 10px #ccc;
+}
+
+.texto {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:justify;
+}
+
+
+.tbllogin_td{
+	width:200px;
+	height:20px;
+	border:solid 1px;
+	border-color:#CCCCCC;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+	border-color:#DCDCDC;
+	background-color:#FF8C00;
+}
+
+
+.tbllogin_td_campos{
+	width:200px;
+	border:solid 1px;
+	border-color:#CCCCCC;
+	font-size:12px;
+	font-weight:bold;
+	height:40px;
+	text-align:left;
+	border-color:#DCDCDC;
+}
+
+.titulo_tabela {
+	background-color:#800000;
+	font-size:40px;
+	text-align:center;
+	width:245px;
+	height:70px;
+	color:#FFFF00;
+	margin-top:30px;
+	border-radius:0px;
+}
+
+.caixadetexto{
+	width:350px;
+	height:30px;
+	font-size:20px;
+    resize: none;
+}
+
+.botao{
+	width:100px;
+	height:35px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+/*_____________________________________ Consulta _____________________________________*/
+
+
+#consulta_usuarios {
+	width:650px;
+	height:auto;
+	background-color:#FFFFFF;
+	border:0px solid;
+	margin-left:600px;
+	margin-bottom:200px;
+}
+
+#tblconsulta_usuarios{
+	width:600px;
+	border:solid 2px;
+	border-color:#000000;
+	border-radius:5px 5px 5px 5px;
+	box-shadow:5px 5px 5px #aaa;
+	
+}
+
+#tblconsulta td{
+	width:20%;
+	border:solid 1px;
+}
+
+.titulo_tabela_consulta {
+	background-color:#FF8C00;
+	font-family:verdana;
+	font-size:16px;
+	text-align:center;
+	height:50px;
+	color:#ffffff;
+	border-radius:3px 3px 3px 3px;
+
+
+}
+
+/* ========================================= Nivel ========================================= */
+
+/*_____________________________________ Cadastro de nível_____________________________________*/
+
+#conteudoNiveis{
+	width:100%;
+	height:100%;
+	border:0px solid;
+}
+
+#cadastro_nivel {
+	width:250px;
+	height:400px;
+	margin-left:100px;
+	margin-top:0px;
+}
+
+#tbllogin_nivel{
+	width:auto;
+	height:auto;
+	border:solid 2px;
+	border-color:#000;
+	border-radius:5px 5px 5px 5px;
+	box-shadow:10px 10px 10px #ccc;
+}
+
+.botao{
+	width:100px;
+	height:35px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+/*_____________________________________ Consulta de nivel_____________________________________*/
+
+
+#consulta_nivel {
+	width:650px;
+	height:auto;
+	background-color:#FFFFFF;
+	border:0px solid;
+	margin-top:-400px;
+	margin-left:600px;
+	margin-bottom:200px;
+}
+
+#tblconsulta_nivel{
+	width:600px;
+	border:solid 2px;
+	border-color:#000000;
+	border-radius:5px 5px 5px 5px;
+	box-shadow:5px 5px 5px #aaa;
+	
+}
+
+/*_____________________________________ Rodapé _____________________________________*/
+
+footer{
+	width:100%;
+	height:50px;
+	margin-top:-20px;
+	border:0px solid;
+	background-color:#FF8C00;
+	border-radius:0px 0px 30px 30px;
+}
+
+footer p{
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	color:#fff;
+}

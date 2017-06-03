@@ -1,0 +1,2055 @@
+@media screen and (max-device-width:700px){
+    
+    body{
+	margin:auto;
+	background-image:url("../Imagens/fundo6.jpg");
+	font-family:Berlin Sans FB;
+    }
+
+    #principal{
+        margin:auto;
+    }
+
+    header{
+        width:100%;
+        height:150px;
+    }
+
+    #caixaoculta{
+        width:100%;
+        min-height:50px;
+        height: auto;
+        background-color:#FF8C00;
+        position:fixed;
+        filter:alpha(opacity=70);
+        opacity:0.7;
+        z-index:5;
+    }
+    
+     /*_______________________________Conteúdo da header_________________________________________________*/
+
+    #conteudoheader{
+        width:700px;
+        min-height:50px;
+        height: auto;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:1px;
+        margin-top:auto;
+        border:1px solid #FF8C00;
+    }
+
+    #logo{
+        width:auto;
+        height:auto;
+        float:left;
+        margin-top:15px;
+        margin-left: 150px;
+        /*border-radius:200px;
+        background-color:#000;*/
+    }
+
+    #logoimg{
+        width:350px;
+        height:350px;
+        border-radius:20px;
+        float:left;
+    }
+
+    .img_menu{
+        
+        width: 100px;
+        height: 100px;
+    }
+    
+    #menuprincipal{
+        display: none;
+
+    }
+
+    #links{
+       display: none;
+    }
+
+    #links li{
+        color:#ffffff;
+        list-style:none;
+        width:130px;
+        position:relative;
+        float:left;
+    }
+
+    #links a{
+        color:#FFFF00;
+    }
+
+    #links li:hover{
+        background-color:#B22222;
+        border-radius:5px;
+        transition:1s;
+        box-shadow:inset 000 60px #000;
+    }
+
+    a:link {
+     color:#fff;
+    }
+
+    a:hover {
+     color:#fff;
+    }
+
+    /*_______________________________Links Logo_________________________________________________*/
+
+
+    #linksl{
+        color:#ffffff;
+        list-style:none;
+        display:inline-block;
+        margin-top:-3px;
+        margin-left:-28px;
+        text-decoration:none;
+    }
+
+    #linksl li{
+        color:#ffffff;
+        list-style:none;
+    }
+
+    #linksl a{
+        color:#FFFF00;
+    }
+
+    #linksl li:hover{
+        transition:1s;
+        height:50px;
+        transition:0.5s;
+        -webkit-transform:rotateZ(-10deg); 
+        -ms-transform:rotateZ(-10deg);
+        transform:rotateZ(-10deg);
+    }
+
+    a:linkl {
+     color:#fff;
+    }
+
+    a:hover {
+     color:#fff;
+    }
+
+    /*_______________________________Login_________________________________________________*/
+
+    #autenticacao{
+        display:none;
+    }
+    
+    section{
+        width:1700px;
+        height:6650px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:230px;
+        border:1px solid;
+    }
+
+    /* Imagem de fundo da section */
+
+    /*#fundosection{
+        background-image:url("../Imagens/.jpg");
+        background-repeat:no-repeat;
+    }*/
+
+    /*_______________________________Slider_________________________________________________*/
+
+    #slider{
+        width:1700px;
+        height:550px;
+        position:relative;
+        border:1px solid #fff;
+        margin-top: 20px;
+    }
+
+    #slider>img{
+        width:100%;
+        height:100%;
+        position:absolute;
+        border-radius:5px;
+    }
+
+    #slider>.button{
+        width:40px;
+        height:40px;
+        position:absolute;
+        border:none;
+        border-radius:25px;
+        top:170px;
+        background-color:#800000;
+        color:#fff;
+        font-size:20px;
+        border:1px solid;
+    }
+
+    #slider>#btn1:hover{
+        box-shadow:5px 0px 5px 0px #ffffff;
+        transition:0.8s;
+        -webkit-transform:scale(1.3);
+        -ms-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+    #slider>#btn2:hover{
+        box-shadow:-5px 0px 5px 0px #ffffff;
+        transition:0.8s;
+        -webkit-transform:scale(1.3);
+        -ms-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+    #slider>#btn2{
+        position:relative;
+        float:right;
+    }
+
+    /*_______________________________Menu Secundario_________________________________________________*/
+
+    .menusecundario{
+        width:550px;
+        height:6000px;
+        float:left;
+        margin-top:30px;
+        background-color:#800000;
+        opacity:0.8;
+        list-style:none;
+        text-decoration:none;
+        border-radius:5px;
+
+    }
+
+    .menusecundario li{
+        margin-top:50px;
+        margin-left:auto;
+        list-style:none;
+        font-size:70px;
+        float:left;
+        text-align:center;
+        border:1px solid;
+    }
+
+    #links2{
+        color:#fff;
+        list-style:none;
+        display:inline-block;
+        height:50px;
+        position:relative; 
+        font-size:25px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+
+    }
+
+    #links2 li{
+        color:#ffffff;
+        list-style:none;
+        width:150px;
+        position:relative;
+        float:left;
+    }
+
+    #links2 a{
+        color:#FFFF00;
+    }
+
+    #links2 li:hover{
+        background-color:#B22222;
+        border-radius:5px;
+        transition:1s;
+        box-shadow:inset 000 60px #000;
+    }
+
+    a:link {
+     color:#fff;
+    }
+
+    a:hover {
+     color:#fff;
+    }
+
+    /*_______________________________Caixa do produto_________________________________________________*/
+
+    #conteudoproduto{
+        width:1000px;
+        height:880px;
+        margin-top:65px;
+        margin-left:600px;
+        border:1px solid;
+    }
+
+    .produto{
+        width:1000px;
+        height:1000px;
+        float:left;
+        margin:auto;
+        border:1px solid;
+    }
+
+    .imagemproduto{
+        width:600px;
+        height:600px;
+        background-color:#F5DEB3;
+        margin:auto;
+        margin-top:30px;
+        border-radius:15px;
+    }
+
+    .hamburguer{
+        width:550px;
+        height:550px;
+        margin-top:25px;
+        margin-left:25px;
+    }
+
+    .infproduto{
+        width:1000px;
+        height:300px;
+        background-color:#D2691E;
+        margin-top:20px;
+        border-radius:5px;
+    }
+
+    .informacoesproduto{
+        width:800px;
+        height:250px;
+        color:#FFD700;
+        font-size: 20px;
+        margin:auto;
+        border:1px solid;
+    }
+
+    .nome{
+        text-align: center;
+        font-size:50px;
+    }
+
+    .detalhes{
+        width:80px;
+        background-color:#000;
+        float:right;
+    }
+
+    .detalhes a{
+        color:red;
+        float:right;
+    }
+
+    /*___________________________________Redes Sociais_____________________________________________*/
+
+    #redessociais{
+        width:90px;
+        height:265px;
+        position:fixed;
+        margin-top:0px;
+        margin-left:1700px;
+        float:right;
+        z-index:9999;
+    }
+
+    #facebook{
+        width:90px;
+        height:81px;
+        margin-top:5px;
+        transition:0.8s;
+    }
+
+    #facebook:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:0.8s;
+    }
+
+    #logoF{
+        width:65px;
+        height:57px;
+        margin-left:15px;
+        margin-top:10px;
+    }
+
+    #twitter{
+        width:90px;
+        height:81px;
+        margin-top:5px;
+        transition:0.8s;
+    }
+
+    #twitter:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:0.8s;
+    }
+
+    #logoT{
+        width:90px;
+        height:81px;
+        margin-top:0px;
+    }
+
+    #instagram{
+        width:90px;
+        height:81px;
+        margin-top:5px;
+        transition:0.8s;
+    }
+
+    #instagram:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:0.8s;
+    }
+
+    #logoI{
+        width:70px;
+        height:75px;
+        margin-left:10px;
+        margin-top:5px;
+    }
+
+    /*________________________________________________________________________________*/
+
+    footer{
+        width:1650px;
+        height:300px;
+        opacity:0.7;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:red;
+        color:#fff;
+    }
+
+    .p{
+        text-align:center;
+        font-weight:bold;
+        font-size:40px;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    
+    body{
+	margin:auto;
+	background-image:url("../Imagens/fundo6.jpg");
+	font-family:Berlin Sans FB;
+    }
+
+    #principal{
+        margin:auto;
+    }
+
+    header{
+        width:100%;
+        height:150px;
+    }
+
+    #caixaoculta{
+        width:100%;
+        min-height:151px;
+        height: auto;
+        background-color:#FF8C00;
+        position:fixed;
+        filter:alpha(opacity=70);
+        opacity:0.7;
+        z-index:5;
+    }
+
+        /*_______________________________Conteúdo da header_________________________________________________*/
+
+    #conteudoheader{
+        width:1700px;
+        min-height:150px;
+        height: auto;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:1px;
+        margin-top:auto;
+        border:1px solid #FF8C00;
+    }
+
+    #logo{
+        width:150px;
+        height:125px;
+        float:left;
+        margin-top:15px;
+        /*border-radius:200px;
+        background-color:#000;*/
+    }
+
+    #logoimg{
+        width:125px;
+        height:125px;
+        border-radius:20px;
+        float:left;
+    }
+
+    #menuprincipal{
+        width:1200px;
+        height:100px;
+        margin-left:100px;
+        margin-top:25px;
+        float:left;
+        background-color:#800000;
+        border-radius:5px;
+        text-decoration:none;
+        border:0px solid;
+
+    }
+
+    #menuprincipal li{
+        margin-top:25px;
+        margin-left:50px;
+        list-style:none;
+        font-size:25px;
+        float:left;
+        text-align:center;
+        border:0px solid;
+
+    }
+
+    #links{
+        color:#ffffff;
+        list-style:none;
+        display:inline-block;
+        height:50px;
+        position:relative; 
+        font-size:25px;
+        margin-top:10px;
+        text-decoration:none;
+    }
+
+    #links li{
+        color:#ffffff;
+        list-style:none;
+        width:130px;
+        position:relative;
+        float:left;
+    }
+
+    #links a{
+        color:#FFFF00;
+    }
+
+    #links li:hover{
+        background-color:#B22222;
+        border-radius:5px;
+        transition:1s;
+        box-shadow:inset 000 60px #000;
+    }
+
+    a:link {
+     color:#fff;
+    }
+
+    a:hover {
+     color:#fff;
+    }
+
+    /*_______________________________Links Logo_________________________________________________*/
+
+
+    #linksl{
+        color:#ffffff;
+        list-style:none;
+        display:inline-block;
+        margin-top:-3px;
+        margin-left:-28px;
+        text-decoration:none;
+    }
+
+    #linksl li{
+        color:#ffffff;
+        list-style:none;
+    }
+
+    #linksl a{
+        color:#FFFF00;
+    }
+
+    #linksl li:hover{
+        transition:1s;
+        height:50px;
+        transition:0.5s;
+        -webkit-transform:rotateZ(-10deg); 
+        -ms-transform:rotateZ(-10deg);
+        transform:rotateZ(-10deg);
+    }
+
+    a:linkl {
+     color:#fff;
+    }
+
+    a:hover {
+     color:#fff;
+    }
+
+    /*_______________________________Login_________________________________________________*/
+
+    #autenticacao{
+        width:230px;
+        height:auto;
+        float:right;
+        border-radius:5px;
+        background-color:#000;
+        color:#fff;
+        border:1px solid;
+    }
+
+    .input{
+        width:150px;
+        height:20px;
+        margin-top:15px;
+        border-radius:2px;
+    }
+
+    #textlogin{
+        margin-top:5px;
+    }
+
+    #textlogin p {
+
+    }
+
+    #itensautenticacao{
+        margin-left:20px;
+        margin-top:10px;
+    }
+
+    #btnlogar{
+        margin-top:-30px;
+        float:right;
+        border:0px solid;
+    }
+
+    #botaologar{
+        width:50px;
+        height:50px;
+        background-color:#800000;
+        border-radius:100px;
+        color:#FFFF00;
+    }
+
+    section{
+        width:1700px;
+        height:1350px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1px;
+        border:0px solid;
+    }
+
+    /* Imagem de fundo da section */
+
+    /*#fundosection{
+        background-image:url("../Imagens/.jpg");
+        background-repeat:no-repeat;
+    }*/
+
+    /*_______________________________Slider_________________________________________________*/
+
+    #slider{
+        width:1700px;
+        height:400px;
+        position:relative;
+        border:1px solid #fff;
+        margin-top: 20px;
+    }
+
+    #slider>img{
+        width:100%;
+        height:100%;
+        position:absolute;
+        border-radius:5px;
+    }
+
+    #slider>.button{
+        width:40px;
+        height:40px;
+        position:absolute;
+        border:none;
+        border-radius:25px;
+        top:170px;
+        background-color:#800000;
+        color:#fff;
+        font-size:20px;
+        border:1px solid;
+    }
+
+    #slider>#btn1:hover{
+        box-shadow:5px 0px 5px 0px #ffffff;
+        transition:0.8s;
+        -webkit-transform:scale(1.3);
+        -ms-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+    #slider>#btn2:hover{
+        box-shadow:-5px 0px 5px 0px #ffffff;
+        transition:0.8s;
+        -webkit-transform:scale(1.3);
+        -ms-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+    #slider>#btn2{
+        position:relative;
+        float:right;
+    }
+
+    /*_______________________________Menu Secundario_________________________________________________*/
+
+    .menusecundario{
+        width:250px;
+        height:875px;
+        float:left;
+        margin-top:30px;
+        background-color:#800000;
+        opacity:0.8;
+        list-style:none;
+        text-decoration:none;
+        border-radius:5px;
+
+    }
+
+    .menusecundario li{
+        margin-top:50px;
+        margin-left:auto;
+        list-style:none;
+        font-size:25px;
+        float:left;
+        text-align:center;
+        border:0px solid;
+    }
+
+    #links2{
+        color:#fff;
+        list-style:none;
+        display:inline-block;
+        height:50px;
+        position:relative; 
+        font-size:25px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+
+    }
+
+    #links2 li{
+        color:#ffffff;
+        list-style:none;
+        width:150px;
+        position:relative;
+        float:left;
+    }
+
+    #links2 a{
+        color:#FFFF00;
+    }
+
+    #links2 li:hover{
+        background-color:#B22222;
+        border-radius:5px;
+        transition:1s;
+        box-shadow:inset 000 60px #000;
+    }
+
+    a:link {
+     color:#fff;
+    }
+
+    a:hover {
+     color:#fff;
+    }
+
+    /*_______________________________Caixa do produto_________________________________________________*/
+
+    #conteudoproduto{
+        width:1400px;
+        height:880px;
+        margin-top:65px;
+        margin-left:300px;
+        border:0px solid;
+    }
+
+    .produto{
+        width:400px;
+        height:400px;
+        float:left;
+        margin-top:20px;
+        margin-left:40px;
+        border:0px solid;
+    }
+
+    .imagemproduto{
+        width:250px;
+        height:200px;
+        background-color:#F5DEB3;
+        margin:auto;
+        margin-top:30px;
+        border-radius:15px;
+    }
+
+    .hamburguer{
+        width:200px;
+        height:150px;
+        margin-top:25px;
+        margin-left:25px;
+    }
+
+    .infproduto{
+        width:400px;
+        height:150px;
+        background-color:#D2691E;
+        margin-top:20px;
+        border-radius:5px;
+    }
+
+    .informacoesproduto{
+        width:380px;
+        height:125px;
+        color:#FFD700;
+        margin:auto;
+    }
+
+    .nome{
+        margin-left:150px;
+        font-size:20px;
+    }
+
+    .detalhes{
+        width:80px;
+        background-color:#000;
+        float:right;
+    }
+
+    .detalhes a{
+        color:red;
+        float:right;
+    }
+
+    /*___________________________________Redes Sociais_____________________________________________*/
+
+    #redessociais{
+        width:90px;
+        height:265px;
+        position:fixed;
+        margin-top:0px;
+        margin-left:1700px;
+        float:right;
+        z-index:9999;
+    }
+
+    #facebook{
+        width:90px;
+        height:81px;
+        margin-top:5px;
+        transition:0.8s;
+    }
+
+    #facebook:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:0.8s;
+    }
+
+    #logoF{
+        width:65px;
+        height:57px;
+        margin-left:15px;
+        margin-top:10px;
+    }
+
+    #twitter{
+        width:90px;
+        height:81px;
+        margin-top:5px;
+        transition:0.8s;
+    }
+
+    #twitter:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:0.8s;
+    }
+
+    #logoT{
+        width:90px;
+        height:81px;
+        margin-top:0px;
+    }
+
+    #instagram{
+        width:90px;
+        height:81px;
+        margin-top:5px;
+        transition:0.8s;
+    }
+
+    #instagram:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:0.8s;
+    }
+
+    #logoI{
+        width:70px;
+        height:75px;
+        margin-left:10px;
+        margin-top:5px;
+    }
+
+    /*________________________________________________________________________________*/
+
+    footer{
+        width:100%;
+        height:125px;
+        opacity:0.7;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:red;
+        color:#fff;
+    }
+
+    .p{
+        text-align:center;
+        font-weight:bold;
+        font-size:20px;
+    }
+    
+}
+
+
+
+
+
+/*============================================================================== Banda ==============================================================================*/
+
+#sectionbanda{
+	width:1650px;
+	height:1450px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1px;
+	border:0px solid;
+}
+
+#conteudosobre{
+	width:800px;
+	height:auto;
+	float:right;
+	border:0px solid;
+}
+
+#conteudoinformacoes{
+	width:800px;
+	height:auto;
+	float:right;
+	border:0px solid;
+}
+
+#conteudoimagem{
+	width:845px;
+	height:815px;
+	float:left;
+}
+
+#titulosobre{
+	width:100%;
+	height:100px;
+	background-color:#000000;
+	border-radius:20px;
+	margin-top:5px;
+}
+
+#titulosobre p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+#sobreabanda{
+	width:800px;
+	height:auto;
+	border-radius:15px;
+	background-color:#D3D3D3;
+	margin-top:5px;
+}
+
+#textbanda{
+	width:100%;
+	height:auto;
+	margin:auto;
+	border:0px solid;
+}
+
+#textbanda p{
+	color:#000;
+	text-align:justify;
+	font-size:19px;
+}
+
+
+#tituloinformacoes{
+	width:100%;
+	height:100px;
+	background-color:#000;
+	border-radius:20px;
+	float:right;
+}
+
+#tituloinformacoes p{
+	color:#fff;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+	float:right;
+}
+
+/* #informacoesbanda{
+	width:100%;
+	height:470px;
+	border-radius:15px;
+	background-color:#D3D3D3;
+	border:0px solid;
+	margin-top:120px;
+} */
+
+#integrantes{
+	width:250px;
+	height:auto;
+	margin-top:10px;
+	margin-left:115px;
+	background-color:#C3C3C3;
+	float:left;
+	border-radius:15px;
+}
+
+.infintegrantes{
+	background-color:#D3D3D3;
+	margin-top:20px;
+	border-radius:50px;
+}
+
+.infintegrantes p{
+	text-align:justify;
+	margin-left:20px;
+	font-size:20px;
+}
+
+#imagemBanda{
+	width:100%;
+	height:1065px;
+	float:right;
+}
+
+#imgBanda2{
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+
+/*___________________________________Redes Sociais Banda_____________________________________________*/
+
+#redessociaisbanda{
+	width:90px;
+	height:265px;
+	position:fixed;
+	margin-top:0px;
+	margin-left:1680px;
+	float:right;
+}
+
+#facebook{
+	width:90px;
+	height:81px;
+	margin-top:5px;
+	transition:0.8s;
+}
+
+#facebook:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	transition:0.8s;
+}
+
+#logoF{
+	width:65px;
+	height:57px;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#twitter{
+	width:90px;
+	height:81px;
+	margin-top:5px;
+	transition:0.8s;
+}
+
+#twitter:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	transition:0.8s;
+}
+
+#logoT{
+	width:90px;
+	height:81px;
+	margin-top:0px;
+}
+
+#instagram{
+	width:90px;
+	height:81px;
+	margin-top:5px;
+	transition:0.8s;
+}
+
+#instagram:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	transition:0.8s;
+}
+
+/*_______________________________Slider Banda_________________________________________________*/
+
+#sliderN{
+	width:1700px;
+	height:400px;
+	position:relative;
+	border:1px solid #fff;
+	margin-top: 20px;
+}
+
+#sliderN>img{
+	width:100%;
+	height:100%;
+	position:absolute;
+	border-radius:5px;
+}
+
+#sliderN>.button{
+	width:40px;
+	height:40px;
+	position:absolute;
+	border:none;
+	border-radius:25px;
+	top:170px;
+	background-color:#800000;
+	color:#fff;
+	font-size:20px;
+	border:1px solid;
+}
+
+#sliderN>#btn1:hover{
+	box-shadow:5px 0px 5px 0px #ffffff;
+	transition:0.8s;
+	-webkit-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
+#sliderN>#btn2:hover{
+	box-shadow:-5px 0px 5px 0px #ffffff;
+	transition:0.8s;
+	-webkit-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
+#sliderN>#btn2{
+	position:relative;
+	float:right;
+}
+
+/*============================================================================== Sobre ==============================================================================*/
+
+#conteudohistoria{
+	width:1000px;
+	height:600px;
+	margin-left:0px;
+	float:left;
+	border:0px solid;
+}
+
+#conteudoconquistas{
+	width:650px;
+	height:600px;
+	float:right;
+	border:0px solid;
+}
+
+#titulohistoria{
+	width:1000px;
+	height:100px;
+	background-color:#000000;
+	border-radius:20px;
+	margin-top:5px;
+	float:left;
+}
+
+#titulohistoria p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+#historia{
+	width:1000px;
+	height:auto;
+	background-color:#D3D3D3;
+	border-radius:15px;
+	margin:auto;
+	margin-top:5px;
+	float:left;
+	border:0px solid;
+}
+
+#historia p{
+	text-align:justify;
+	font-size:22px;
+}
+
+#tituloconquistas{
+	width:650px;
+	height:100px;
+	background-color:#000;
+	border-radius:20px;
+	margin-top:5px;
+	float:right;
+}
+
+#tituloconquistas p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+	float:right;
+}
+
+#conquistas{
+	width:650px;
+	height:auto;
+	background-color:#D3D3D3;
+	border-radius:15px;
+	margin:auto;
+	margin-top:5px;
+	float:right;
+}
+
+.conquistastext{
+	width:auto;
+	height:auto;
+	border-radius:15px;
+}
+
+.conquistastext p{
+	font-size:23px;
+	margin-top:30px;
+	margin-left:10px;
+}
+
+#conteudoimgssobre{
+	width:1700px;
+	height:360px;
+	margin-top:600px;
+	background-color:#C3C3C3;
+	border-radius:15px;
+	border:0px solid;
+}
+
+.imgsobre{
+	width:400px;
+	height:340px;
+	margin-left:125px;
+	margin-top:10px;
+	border:1px solid;
+	float:left;
+}
+
+.honkers{
+	width:100%;
+	height:100%;
+}
+
+/*============================================================================== Promoções ==============================================================================*/
+
+#sectionpromocao{
+	width:1700px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1px;
+	border:0px solid;
+}
+
+#conteudopromocoes{
+	width:1500px;
+	height:auto;
+	margin:auto;
+	border:0px solid;
+}
+
+#conteudopromocoeslanches{
+	width:auto;
+	height:auto;
+	margin:auto;
+	margin-top:100px;
+	border:0px solid;
+}
+
+#titulopromocoes{
+	width:1500px;
+	height:100px;
+	margin:auto;
+	background-color:#000000;
+	border-radius:20px;
+	margin-top:5px;
+	border:0px solid;
+}
+
+#titulopromocoes p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+#titulodatapromocao{
+	width:600px;
+	height:100px;
+	margin:auto;
+	background-color:#800000;
+	border-radius:5px;
+	margin-top:0px;
+	border:0px solid;
+}
+
+#titulodatapromocao p{
+	color:#fff;
+	float:right;
+	font-size:60px;
+	margin-top:0px;
+	margin-right:90px;
+	font-family:Segoe Script;
+}
+
+#produtopromocao{
+	width:1500px;
+	height:1000px;
+	margin-left:0px;
+	border:0px solid;
+}
+
+#imagemprodutopromocao{
+	width:450px;
+	height:400px;
+	background-color:#F5DEB3;
+	margin:auto;
+	margin-top:20px;
+	border-radius:15px;
+}
+
+#hamburguerpromocao{
+	width:400px;
+	height:350px;
+	margin-top:0px;
+	margin-left:24px;
+}
+
+#infprodutopromocao{
+	width:1000px;
+	height:auto;
+	background-color:#D2691E;
+	margin-top:20px;
+	margin-left:0px;
+	border-radius:5px;
+	color:#FFD700;
+	margin:auto;
+	border:1px solid;
+	float:left;
+}
+
+#informacoesprodutopromocao{
+	width:auto;
+	height:auto;
+	color:#FFD700;
+	margin:auto;
+}
+
+#nomeprodutopromocao{
+	width:425px;
+	height:100px;
+	margin:auto;
+	background-color:#000;
+	border:1px solid;
+}
+
+#nomeprodutopromocao p{
+	margin-top:20px;
+	text-align:center;
+	font-size:45px;
+}
+
+#descprodutopromocao{
+	width:950px;
+	height:auto;
+	margin-top:0px;
+	margin-left:20px;
+	border:0px solid;
+}
+
+#descprodutopromocao p{
+	font-size:30px;
+	text-align:justify;
+}
+
+#infnutricionalpromocao{
+	width:490px;
+	height:auto;
+	background-color:#D2691E;
+	margin-top:0px;
+	border-radius:5px;
+	border:0px solid;
+	color:#FFD700;
+	float:right;
+}
+
+#nomeinfnutricional{
+	width:425px;
+	height:100px;
+	margin-left:30px;
+	background-color:#000;
+	border:1px solid;
+}
+
+#nomeinfnutricional p{
+	margin-top:20px;
+	text-align:center;
+	font-size:45px;
+}
+
+.descinfnutricional{
+	width:150px;
+	height:240px;
+	margin-left:61px;
+	border:0px solid;
+	float:left;
+}
+
+.descinfnutricional p{
+	font-size:20px;
+}
+
+/*_______________________________Slider Promoções_________________________________________________*/
+
+#sliderpromocao{
+	width:1490px;
+	height:400px;
+	position:relative;
+	margin-left:110px;
+	margin-top:230px;
+	border:1px solid #fff;
+}
+
+#sliderpromocao>img{
+	width:100%;
+	height:100%;
+	position:absolute;
+	border-radius:5px;
+}
+
+#sliderpromocao>.button{
+	width:40px;
+	height:40px;
+	position:absolute;
+	border:none;
+	border-radius:25px;
+	top:170px;
+	background-color:#800000;
+	color:#fff;
+	font-size:20px;
+	border:1px solid;
+}
+
+#sliderpromocao>#btn1:hover{
+	box-shadow:5px 0px 5px 0px #ffffff;
+	transition:0.8s;
+	-webkit-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
+#sliderpromocao>#btn1{
+	position:relative;
+	margin-right:500px;
+}
+
+#sliderpromocao>#btn2:hover{
+	box-shadow:-5px 0px 5px 0px #ffffff;
+	transition:0.8s;
+	-webkit-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
+#sliderpromocao>#btn2{
+	position:relative;
+	float:right;
+}
+
+/*============================================================================== Ambientes ==============================================================================*/
+
+#sectionAmbientes{
+	width:1700px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1px;
+	border:0px solid;
+}
+
+#conteudoambientes{
+	width:1600px;
+	height:1150px;
+	margin:auto;
+	border:0px solid;
+}
+
+#tituloambientes{
+	width:1600px;
+	height:100px;
+	background-color:#000;
+	border-radius:20px;
+	margin-top:5px;
+	float:left;
+}
+
+#tituloambientes p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+#ambientes{
+	width:1600px;
+	height:1240;
+	background-color:#D3D3D3;
+	border-radius:15px;
+	margin:auto;
+	margin-top:5px;
+	float:left;
+}
+
+.infambientes1{
+	width:600px;
+	height:400px;
+	background-color:#C0C0C0;
+	border-radius:15px;
+	margin-left:130px;
+	margin-top:100px;
+	float:left
+}
+
+.infambientes2{
+	width:600px;
+	height:400px;
+	background-color:#C0C0C0;
+	border-radius:15px;
+	margin-left:130px;
+	margin-top:80px;
+	float:left;
+}
+
+.imgambientes{
+	width:300px;
+	height:380px;
+	background-color:#D3D3D3;
+	margin-left:10px;
+	margin-top:10px;
+	float:left;
+}
+
+.imgloja{
+	width:300px;
+	height:380px;
+}
+
+.informacoesambientes{
+	width:240px;
+	height:500px;
+	margin-right:10px;
+	float:right;
+}
+
+.enderecoambientes{
+	width:270px;
+	height:150px;
+	background-color:#000;
+	margin-top:10px;
+	float:right;
+}
+
+.enderecoambientes p{
+	font-size:17px;
+	color:#FFFF00;
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.logonossosambientes{
+	width:270px;
+	height:220px;
+	background-color:#D3D3D3;
+	margin-top:10px;
+	float:right;
+}
+
+.imglogonossosambientes{
+	width:270px;
+	height:220px;
+	background-color:#D3D3D3;
+	margin-top:0px;
+	float:right;
+}
+
+
+/*============================================================================== Lanche do mês ==============================================================================*/
+
+#conteudolanchedomes{
+	width:1500px;
+	height:auto;
+	margin:auto;
+	border:0px solid;
+}
+
+#conteudolanchedomesslider{
+	width:1500px;
+	height:700px;
+	margin-top:80px;
+	border:0px solid;
+}
+
+#titulolanchedomes{
+	width:1500px;
+	height:100px;
+	margin:auto;
+	background-color:#000;
+	border-radius:20px;
+	margin-top:5px;
+}
+
+#titulolanchedomes p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+/*
+#conteudolanche{
+	width:100%;
+	height:auto;
+	border:1px solid;
+}
+
+#imagemLanche{
+	width:400px;
+	height:400px;
+	border:1px solid;
+}
+
+#infLanche{
+	width:1000px;
+	height:400px;
+	margin-top:-400px;
+	margin-left:500px;
+	border:1px solid;
+}*/
+
+/*************************/
+
+#produtolanchedomes{
+	width:auto;
+	height:auto;
+	margin-left:0px;
+	border:0px solid;
+}
+
+#imagemprodutolanchedomes{
+	width:450px;
+	height:400px;
+	background-color:#F5DEB3;
+	margin-top:30px;
+	margin-left:60px;
+	border-radius:15px;
+	border:0px solid;
+}
+
+#hamburguerlanchedomes{
+	width:400px;
+	height:350px;
+	margin-top:25px;
+	margin-left:25px;
+	border-radius:5px;	
+}
+
+#infprodutolanchedomes{
+	width:auto;
+	height:auto;
+	background-color:#D2691E;
+	margin-left:550px;
+	margin-top:-390px;
+	border-radius:5px;
+	border:0px solid;
+}
+
+#informacoesprodutolanchedomes{
+	width:1000px;
+	height:430px;
+	border:0px solid;
+}
+
+#nomelanchedomes{
+	width:450px;
+	height:100px;
+	background-color:#000;
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #FFD700;
+}
+
+#nomelanchedomes p{
+	font-size:45px;
+	color:#FFD700;
+	margin-top:0px;
+	margin-left:5px;
+	text-align:center;
+}
+
+#desclanchedomes{
+	width:950px;
+	height:auto;
+	margin-top:0px;
+	border:0px solid /*#D2691E*/;
+}
+
+#desclanchedomes p{
+	color:#FFD700;
+	font-size:35px;
+	text-align:justify;
+}
+
+#precolanchedomes{
+	width:200px;
+	height:60px;
+	border:0px solid #FFD700; 
+	float:left;
+}
+
+#precolanchedomes p{
+	margin:auto;
+	color:#FFD700;
+	font-size:35px;
+	text-align:justify;
+}
+
+#linkinfnutricional{
+	width:220px;
+	height:auto;
+	float:right;
+	margin-top:0px;
+	background-color:#000;
+	border:1px solid #FFD700;
+}
+
+#linkinfnutricional a{
+	margin-left:0px;
+	margin-top:50px;
+	color:#FFD700;
+	font-size:20px;
+}
+
+#titulolanchedomesslider{
+	width:1500px;
+	height:100px;
+	margin:auto;
+	background-color:#000000;
+	border-radius:20px;
+	margin-top:5px;
+}
+
+#titulolanchedomesslider p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+/*_______________________________Slider Lanche do mês_________________________________________________*/
+
+#sliderlanchedomes{
+	width:1500px;
+	height:500px;
+	margin-top:50px;
+	border:1px solid #fff;
+	position:relative;
+}
+
+#sliderlanchedomes>img{
+	width:100%;
+	height:100%;
+	position:absolute;
+	border-radius:5px;
+}
+
+#sliderlanchedomes>.button{
+	width:40px;
+	height:40px;
+	position:absolute;
+	border:none;
+	border-radius:25px;
+	top:225px;
+	background-color:#800000;
+	color:#fff;
+	font-size:20px;
+	border:1px solid;
+}
+
+#sliderlanchedomes>#btn1:hover{
+	box-shadow:5px 0px 5px 0px #ffffff;
+	transition:0.8s;
+	-webkit-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
+#sliderlanchedomes>#btn2:hover{
+	box-shadow:-5px 0px 5px 0px #ffffff;
+	transition:0.8s;
+	-webkit-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
+#sliderlanchedomes>#btn2{
+	position:relative;
+	margin-left:1460px;
+	
+}
+
+/*============================================================================== Faleconosco ==============================================================================*/
+
+#titulocadastro{
+	width:1500px;
+	height:100px;
+	background-color:#000000;
+	border-radius:20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+
+}
+
+#titulocadastro p{
+	color:#fff;
+	float:right;
+	margin-right:25px;
+	margin-top:23px;
+	font-size:65px;
+}
+
+#content {
+	width:100%;
+	height:900px;
+}
+
+#cadastro {
+	width:100%;
+	height:400px;
+	margin-bottom:50px;
+}
+
+#tblcadastro {
+	width:800px;
+	height:800px;
+	margin-left:450px;
+	margin-right:auto;
+	margin-top:50px;
+	border:solid 2px;
+	border-color:#000;
+	border-radius:5px 5px 5px 5px;
+	box-shadow:10px 10px 10px #ccc;
+}
+
+
+#tblmenu {
+	width:100%;
+	height:100%;
+	border:solid 2px;
+}
+
+#tblmenu td {
+	border:solid 1px;
+	background-color:#FFFF00;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+	width:20%;
+}
+
+a {
+	text-decoration:none;
+	color:#333333;
+}
+a:hover {
+	/*color:#CCCCCC;
+	font-size:16px;*/
+}
+
+#tblmenu td:hover {
+	background-color:#FFFFCC;
+	font-size:18px;
+}
+
+#conteudo1 {
+	width:294px;
+	height:300px;
+	background-color:#CCCCCC;
+	/*position:absolute;*/
+	float:left;
+}
+#conteudo2 {
+	width:670px;
+	height:300px;
+	background-color:#FFFFFF;
+	/*position:absolute;
+	margin-left:294px;*/
+	float:right;
+	padding:2px;
+	overflow:auto;
+}
+
+#conteudo3 {
+	width:670px;
+	height:300px;
+	background-color:#FFFFFF;
+	/*position:absolute;
+	margin-left:294px;*/
+	float:left;
+}
+
+.titulo {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;
+	color:#0099FF;
+	font-weight:bold;
+}
+
+.texto {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:justify;
+}
+
+
+.tblcadastro_td{
+	width:300px;
+	height:100px;
+	border:solid 1px;
+	border-color:#CCCCCC;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+	border-color:#DCDCDC;
+	background-color:#FF8C00;
+}
+
+
+.tblcadastro_td_campos{
+	width:100px;
+	border:solid 1px;
+	border-color:#CCCCCC;
+	font-size:12px;
+	font-weight:bold;
+	height:40px;
+	text-align:left;
+	border-color:#DCDCDC;
+}
+
+.titulo_tabela {
+	background-color:#800000;
+	font-size:55px;
+	text-align:center;
+	height:125px;
+	color:#FFFF00;
+	margin-top:30px;
+	border-radius:0px;
+}
+
+.caixadetexto{
+	width:500px;
+	height:80px;
+	font-size:25px;
+	resize: none;
+}
+
+#tbl_sexo{
+	width:300px;
+	height:100px;
+	border:solid 0px;
+	font-size:30px;
+	font-weight:bold;
+	color:#000;
+	background-color:#D3D3D3;
+}
+
+.selecaodesexo{
+	width:30px;
+	height:30px;
+}
+
+.botao{
+	width:100px;
+	height:50px;
+	background-color:#800000;
+	color:#FFFF00;
+}
+
+.botao2{
+	width:100px;
+	height:50px;
+	margin-left:400px;
+	background-color:#800000;
+	color:#FFFF00;
+}
