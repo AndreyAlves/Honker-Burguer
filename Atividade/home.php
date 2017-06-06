@@ -4,6 +4,8 @@
 	$login = "";
 	$senha = "";
 	
+    $categoria = "";
+
 	require_once('modulo.php');
 	
 	/* Fazendo a autenticação 
@@ -24,77 +26,9 @@
 		<div id="principal">
 		<!-- ========================================= Cabeçalho ========================================= -->
 			<header>
-				<div id="caixaoculta">
-					<div id="conteudoheader">
-                        <!-- ========================================= Menu Principal Responsivo ========================================= -->
-						<div>
-							<nav id="nav_cel">
-                                <ul class="menu_cel">
-                                    <li>
-                                        <img class="img_menu" src="Imagens/imgmenu.png"/>
-                                        <ul id="links">
-                                            <li>
-                                                <a href="banda.php" title="Banda"> Banda </a>
-                                            </li>
-                                            <li>
-                                                <a href="sobre.php" title="Sobre"> Sobre </a>
-                                            </li>
-                                            <li>
-                                                <a href="promocoes.php" title="Promoções"> Promoções </a>
-                                            </li>
-                                            <li>
-                                                <a href="ambientes.php" title="Nossos Ambientes"> Nossos Ambientes </a>
-                                            </li>
-                                            <li>
-                                                <a href="lanchedomes.php" title="Lanche do mês"> Lanche do mês </a>
-                                            </li>
-                                            <li>
-                                                <a href="faleconosco.php" title="Fale Conosco"> Fale Conosco </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-							</nav>
-						</div>
-						<div id="logo">
-							<ul id="linksl">
-								<li>
-									<a href="home.php" title="HONKER BURGUER" style="text-decoration:none"> <img id="logoimg" src="Imagens/logoprincipal.jpg" alt=""/> </a>	
-								</li>
-							</ul>
-						</div>
-                        <!-- ========================================= Menu Principal ========================================= -->
-						<div>
-							<nav id="menuprincipal">
-                                <li>
-                                    <ul id="links">
-                                        <li>
-                                            <a href="banda.php" title="Banda"> Banda </a>
-                                        </li>
-                                        <li>
-                                            <a href="sobre.php" title="Sobre"> Sobre </a>
-                                        </li>
-                                        <li>
-                                            <a href="promocoes.php" title="Promoções"> Promoções </a>
-                                        </li>
-                                        <li>
-                                            <a href="ambientes.php" title="Nossos Ambientes"> Nossos Ambientes </a>
-                                        </li>
-                                        <li>
-                                            <a href="lanchedomes.php" title="Lanche do mês"> Lanche do mês </a>
-                                        </li>
-                                        <li>
-                                            <a href="faleconosco.php" title="Fale Conosco"> Fale Conosco </a>
-                                        </li>
-                                    </ul>
-                                </li>
-							</nav>
-						</div>
-						
-						<!-- ========================================= Autenticação ========================================= -->
-						<?php include('autenticacao.php'); ?>
-					</div>
-				</div>
+				<?php
+                    include('menu.php');
+                ?>
 			</header>
 			<!-- ========================================= Conteúdo ========================================= -->
 			<section>
@@ -117,38 +51,39 @@
 					</div>
 				</div>
 				<!-- ========================================= Menu Secundário ========================================= -->
-				
+                
 				<nav class="menusecundario">
+                    <?php
+                    
+                        $sql = "select s.subcat,
+                                        c.categoria
+                                    from tblsubcat as s
+                                    inner join tblcategorias as c
+                                    limit 4
+                                    ";
+
+                        $select = mysql_query($sql);
+
+                        //echo($sql);
+
+                        while($rsconsulta = mysql_fetch_array($select)){
+
+                    ?>
 					<ul id="links2">
 						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
+							<?php echo($rsconsulta['categoria']); ?><a href="" >  </a>
 						</li>
+						<!--
 						<li>
 							<a href="" title="Hambúrguer"> Hambúrguer </a>
 						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
+                        -->
 					</ul>
+                    <?php
+                        }
+                    ?>
 				</nav>
+                
 				<!-- ========================================= Conteúdo do produto ========================================= -->
 				
 				<div id="conteudoproduto">

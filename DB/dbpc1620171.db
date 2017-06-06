@@ -255,7 +255,7 @@ CREATE TABLE `tblnutricional` (
   PRIMARY KEY (`idNutricional`),
   KEY `idProduto_idx` (`idProduto`),
   CONSTRAINT `fk_produto` FOREIGN KEY (`idProduto`) REFERENCES `tblprodutos` (`idProduto`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -264,6 +264,7 @@ CREATE TABLE `tblnutricional` (
 
 LOCK TABLES `tblnutricional` WRITE;
 /*!40000 ALTER TABLE `tblnutricional` DISABLE KEYS */;
+INSERT INTO `tblnutricional` VALUES (1,NULL,10,10,10,10,10,10,10,1,1);
 /*!40000 ALTER TABLE `tblnutricional` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -284,7 +285,7 @@ CREATE TABLE `tblprodutos` (
   PRIMARY KEY (`idProduto`),
   KEY `idSubCat_idx` (`idSubCat`),
   CONSTRAINT `idSubCat` FOREIGN KEY (`idSubCat`) REFERENCES `tblsubcat` (`idSubCat`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -293,7 +294,7 @@ CREATE TABLE `tblprodutos` (
 
 LOCK TABLES `tblprodutos` WRITE;
 /*!40000 ALTER TABLE `tblprodutos` DISABLE KEYS */;
-INSERT INTO `tblprodutos` VALUES (9,'Justin Bieber','dsad',10,'arquivos/bannerN2.jpg',26);
+INSERT INTO `tblprodutos` VALUES (1,'HONKER FLAVOR','PÃ£o com pedaÃ§os de gergilim saborosos, com dois andares de hambÃºrgueres, entre eles duas fatias de queijo cheddar derretido, alface fresca, trÃªs rodÃ©las de tomate e nosso molho especial.',13.99,'arquivos/honkerflavor.jpg',24);
 /*!40000 ALTER TABLE `tblprodutos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -313,7 +314,7 @@ CREATE TABLE `tblpromocoes` (
   PRIMARY KEY (`idPromocoes`),
   KEY `idProduto_idx` (`idProduto`),
   CONSTRAINT `idProduto` FOREIGN KEY (`idProduto`) REFERENCES `tblprodutos` (`idProduto`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -322,6 +323,7 @@ CREATE TABLE `tblpromocoes` (
 
 LOCK TABLES `tblpromocoes` WRITE;
 /*!40000 ALTER TABLE `tblpromocoes` DISABLE KEYS */;
+INSERT INTO `tblpromocoes` VALUES (1,'PROMOÃ‡ÃƒO DO DIA DOS NAMORADOS','20%',1,1);
 /*!40000 ALTER TABLE `tblpromocoes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -662,4 +664,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-05-29 19:01:26
+-- Dump completed on 2017-06-06 20:10:39

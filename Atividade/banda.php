@@ -29,44 +29,9 @@
 		<div id="principal">
 			<!-- ========================================= Cabeçalho ========================================= -->
 			<header>
-				<div id="caixaoculta">
-					<div id="conteudoheader">
-						<div id="logo">
-							<ul id="linksl">
-								<li>
-									<a href="home.php" title="HONKER BURGUER" style="text-decoration:none"> <img id="logoimg" src="Imagens/logoprincipal.jpg" alt=""/> </a>	
-								</li>
-							</ul>
-						</div>
-						<!-- ========================================= Menu Principal ========================================= -->
-						<div>
-							<nav id="menuprincipal">
-								<ul id="links">
-									<li>
-										<a href="banda.php" title="Banda"> Banda </a>
-									</li>
-									<li>
-										<a href="sobre.php" title="Sobre"> Sobre </a>
-									</li>
-									<li>
-										<a href="promocoes.php" title="Promoções"> Promoções </a>
-									</li>
-									<li>
-										<a href="ambientes.php" title="Nossos Ambientes"> Nossos Ambientes </a>
-									</li>
-									<li>
-										<a href="lanchedomes.php" title="Lanche do mês"> Lanche do mês </a>
-									</li>
-									<li>
-										<a href="faleconosco.php" title="Fale Conosco"> Fale Conosco </a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<!-- ========================================= Autenticação ========================================= -->
-						<?php include('autenticacao.php'); ?>
-					</div>
-				</div>
+				<?php
+                    include('menu.php');
+                ?>
 			</header>
 			<!-- ========================================= Conteúdo ========================================= -->
 			
@@ -153,83 +118,8 @@
 										<?php echo($rsconsulta['funcao']); ?>
 									</p>
 								</div>
-								<!--<div class="infintegrantes">
-									<p>
-										Dave Grohl
-									</p>
-									<p>
-										Bateria. 1990 - 1994
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Krist Novoselic
-									</p>
-									<p>
-										Baixista. 1987 - 1994
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Pat Smear
-									</p>
-									<p>
-										1993 - 1994
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Chad Channing
-									</p>
-									<p>
-										Bateria. 1988 - 1990
-									</p>
-								</div>
-							</div>
-							<div id="integrantes">
-								<div class="infintegrantes">
-									<p>
-										Jason Everman
-									</p>
-									<p>
-										1989 - 1989
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Aaron Burckhard
-									</p>
-									<p>
-										Bateria. 1987 - 1987
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Dale Crover
-									</p>
-									<p>
-										1988 - 1988
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Dave Foster
-									</p>
-									<p>
-										Bateria. 1988 - 1988
-									</p>
-								</div>
-								<div class="infintegrantes">
-									<p>
-										Dan Peters
-									</p>
-									<p>
-										Bateria. 1990 - 1990
-									</p>
-								</div>
-							</div>-->
-						</div>
-					</div>
+                            </div>
+                        </div>
 					
 				<?php
 					

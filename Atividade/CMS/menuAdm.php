@@ -129,7 +129,7 @@
 				<div class="imgadm">
 					<a href="#" title="Admistração do Fale Conosco"> <img class="iconesmenu3" src="Imagens/iconefaleconosco.png" alt="" /> </a>
 				</div>
-				<div class="textadm">
+				<div class="textadm3">
 					<p>
 						<a href="#" title="Admistração do Fale Conosco"> Adm. Fale Conosco </a>
 					</p>
@@ -139,7 +139,7 @@
 				<div class="imgadm">
 					<a href="#" title="Admistração dos Produtos"> <img class="iconesmenu3" src="Imagens/iconeprodutos.png" alt="" /> </a>
 				</div>
-				<div class="textadm">
+				<div class="textadm3">
 					<p>
 						<a href="#" title="Admistração dos Produtos"> Adm. Produtos </a>
 					</p>
@@ -149,7 +149,7 @@
 				<div class="imgadm">
 					<a href="#" title="Admistração do Usuário"> <img class="iconesmenu3" src="Imagens/iconeusuario.png" alt="" /> </a>
 				</div>
-				<div class="textadm">
+				<div class="textadm3">
 					<p>
 						<a href="#" title="Admistração do Usuário"> Adm. Usuário </a>
 					</p>

@@ -13,7 +13,7 @@ if(isset($_POST['txtUsuario']) && isset($_POST['txtSenha'])){
 		$_SESSION['nome'] = $rsconsulta['nome'];
 		$_SESSION['idNivel'] = $rsconsulta['idNivel'];
 
-		header('location:CMS/CMS.php');
+		header('location:CMS/cms.php');
 		
 	}else {
 		
@@ -36,7 +36,7 @@ if(isset($_POST['txtUsuario']) && isset($_POST['txtSenha'])){
 	<div id="autenticacao">
 		<div id="itensautenticacao">
 			<div id="textlogin" >
-				Login
+				Login - Apenas Gerenciadores
 			</div>
 			<div>
 				<input class="input" placeholder="Usuário" value="<?php echo($login); ?>" name="txtUsuario" type="text">
