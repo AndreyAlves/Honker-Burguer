@@ -3,7 +3,7 @@
 						<div id="logo">
 							<ul id="linksl">
 								<li>
-									<a href="home.php" title="HONKER BURGUER" style="text-decoration:none"> <img id="logoimg" src="Imagens/logoprincipal.jpg" alt=""/> </a>	
+									<a href="index.php" title="HONKER BURGUER" style="text-decoration:none"> <img id="logoimg" src="Imagens/logoprincipal.jpg" alt=""/> </a>	
 								</li>
 							</ul>
 						</div>

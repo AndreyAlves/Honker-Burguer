@@ -86,6 +86,18 @@
                 
 				<!-- ========================================= Conteúdo do produto ========================================= -->
 				
+				<?php
+					
+					$sql = "select * from tblProduto";
+
+					$select = mysql_query($sql);
+
+					//echo($sql);
+
+					while($rsconsulta = mysql_fetch_array($select)){
+					
+				?>
+				
 				<div id="conteudoproduto">
 					<div class="produto">
 						<div class="imagemproduto">
@@ -94,13 +106,13 @@
 						<div class="infproduto">
 							<div class="informacoesproduto">
 								<p class="nome">
-									Cheddar
+									<?php echo($rsconsulta['nome']); ?>
 								</p>
 								<p>
-									Descrição: Pão com cheddar.
+									<?php echo($rsconsulta['descricao']); ?>
 								</p>
 								<p>
-									Preço: R$ 25,99
+									<?php echo($rsconsulta['preco']); ?>
 								</p>
 							</div>
 							<div class="detalhes">
@@ -108,6 +120,10 @@
 							</div>
 						</div>
 					</div>
+					
+					<?php
+						}
+					?>
 					<div class="produto">
 						<div class="imagemproduto">
 							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
