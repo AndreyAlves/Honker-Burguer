@@ -61,7 +61,7 @@
 					</p>
 				</div>
 			</div>
-        
+    </div>
         <?php
             }else if($nivel == 2){
             
@@ -108,7 +108,7 @@
 					</p>
 				</div>
 			</div>
-        
+        </div>
         <?php
             }else if($nivel == 3){
             

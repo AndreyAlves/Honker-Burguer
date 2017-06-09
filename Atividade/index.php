@@ -8,9 +8,6 @@
 
 	require_once('modulo.php');
 	
-	/* Fazendo a autenticação 
-	include('autenticacaoPhp.php');*/
-	
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,11 +29,16 @@
 			</header>
 			<!-- ========================================= Conteúdo ========================================= -->
 			<section>
-				<!-- <img id="fundosection" src="Imagens/fundo4.jpg" alt=""/> -->
-				
 				<!-- ========================================= Slider ========================================= -->
 				
 				<?php include('slider.php'); ?>
+                
+                <!-- ========================================= Pesquisa========================================= -->
+                <div id="pesquisa">
+                    <input id="pesquisa_input" type="text" placeholder="Pesquise aqui o lanche desejado">
+                    <input id="pesquisa_botao" type="submit" value="">
+                </div>
+                
 				<!-- ========================================= Redes Socias ========================================= -->
 				
 				<div id="redessociais">
@@ -55,30 +57,58 @@
 				<nav class="menusecundario">
                     <?php
                     
-                        $sql = "select s.subcat,
+                        $sql = "select * from tblcategorias";
+                    
+                        /*$sql = "select s.subcat,
                                         c.categoria
                                     from tblsubcat as s
                                     inner join tblcategorias as c
                                     limit 4
-                                    ";
+                                    ";*/
 
                         $select = mysql_query($sql);
 
-                        //echo($sql);
 
                         while($rsconsulta = mysql_fetch_array($select)){
 
                     ?>
-					<ul id="links2">
-						<li>
-							<?php echo($rsconsulta['categoria']); ?><a href="" >  </a>
-						</li>
-						<!--
-						<li>
-							<a href="" title="Hambúrguer"> Hambúrguer </a>
-						</li>
-                        -->
-					</ul>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul id="links2">
+                                    <li>
+                                        <a href="#">
+                                            <?php echo($rsconsulta['categoria']); ?>
+                                        </a>
+                                         <?php
+                    
+                                            $sql = "select * from tblsubcat";
+
+                                            $select = mysql_query($sql);
+
+                                            while($rsconsulta = mysql_fetch_array($select)){
+
+                                        ?>
+                                        
+                                        <ul>
+                                            <li>
+                                                <a href="index.php">
+                                                    <?php echo($rsconsulta['subcat']); ?>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                        <?php
+                                            
+                                            }
+                                            
+                                        ?>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+					
                     <?php
                         }
                     ?>
@@ -86,22 +116,23 @@
                 
 				<!-- ========================================= Conteúdo do produto ========================================= -->
 				
-				<?php
-					
-					$sql = "select * from tblProduto";
-
-					$select = mysql_query($sql);
-
-					//echo($sql);
-
-					while($rsconsulta = mysql_fetch_array($select)){
-					
-				?>
+				
 				
 				<div id="conteudoproduto">
+                    
+                    <?php
+					
+                        $sql = "select * from tblProdutos";
+
+                        $select = mysql_query($sql);
+                    
+                        while($rsconsulta = mysql_fetch_array($select)){
+
+                    ?>
+                    
 					<div class="produto">
 						<div class="imagemproduto">
-							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
+							<img class="hamburguer" src="CMS/<?php echo($rsconsulta['imagem']); ?>" alt="">
 						</div>
 						<div class="infproduto">
 							<div class="informacoesproduto">
@@ -112,122 +143,18 @@
 									<?php echo($rsconsulta['descricao']); ?>
 								</p>
 								<p>
-									<?php echo($rsconsulta['preco']); ?>
+									R$ <?php echo($rsconsulta['preco']); ?>
 								</p>
 							</div>
-							<div class="detalhes">
+							<!--<div class="detalhes">
 								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>
+							</div>-->
 						</div>
-					</div>
-					
-					<?php
-						}
-					?>
-					<div class="produto">
-						<div class="imagemproduto">
-							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
-						</div>
-						<div class="infproduto">
-							<div class="informacoesproduto">
-								<p class="nome">
-									Cheddar
-								</p>
-								<p>
-									Descrição: Pão com cheddar.
-								</p>
-								<p>
-									Preço: R$ 25,99
-								</p>
-							</div>
-							<div class="detalhes">
-								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>
-						</div>
-					</div>
-					<div class="produto">
-						<div class="imagemproduto">
-							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
-						</div>
-						<div class="infproduto">
-							<div class="informacoesproduto">
-								<p class="nome">
-									Cheddar
-								</p>
-								<p>
-									Descrição: Pão com cheddar.
-								</p>
-								<p>
-									Preço: R$ 25,99
-								</p>
-							</div>
-							<div class="detalhes">
-								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>
-						</div>
-					</div>
-					<div class="produto">
-						<div class="imagemproduto">
-							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
-						</div>
-						<div class="infproduto">
-							<div class="informacoesproduto">
-								<p class="nome">
-									Cheddar
-								</p>
-								<p>
-									Descrição: Pão com cheddar.
-								</p>
-								<p>
-									Preço: R$ 25,99
-								</p>
-							</div>
-							<div class="detalhes">
-								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>
-						</div>
-					</div>
-					<div class="produto">
-						<div class="imagemproduto">
-							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
-						</div>
-						<div class="infproduto">
-							<div class="informacoesproduto">
-								<p class="nome">
-									Cheddar
-								</p>
-								<p>
-									Descrição: Pão com cheddar.
-								</p>
-								<p>
-									Preço: R$ 25,99
-								</p>
-							</div>
-							<div class="detalhes">
-								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>
-						</div>
-					</div>
-					<div class="produto">
-						<div class="imagemproduto">
-							<img class="hamburguer" src="Imagens/hamburguer.jpg" alt="">
-						</div>
-						<div class="infproduto">
-							<div class="informacoesproduto">
-								<p class="nome">
-									Cheddar
-								</p>
-								<p>
-									Descrição: Pão com cheddar.
-								</p>
-								<p>
-									Preço: R$ 25,99
-								</p>
-							</div>
-							<div class="detalhes">
-								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>
-						</div>
+                        
+                        <?php
+						  }
+					   ?>
+                        
 					</div>
 				</div>
 			</section>

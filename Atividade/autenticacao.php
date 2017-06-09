@@ -14,7 +14,7 @@ if(isset($_POST['txtUsuario']) && isset($_POST['txtSenha'])){
 		$_SESSION['idNivel'] = $rsconsulta['idNivel'];
 
 		header('location:CMS/cms.php');
-		
+        
 	}else {
 		
 ?>
@@ -32,7 +32,7 @@ if(isset($_POST['txtUsuario']) && isset($_POST['txtSenha'])){
 
 <!-- ========================================= Autenticação ========================================= -->
 
-<form name="frmprojeto" method="post" action="home.php">
+<form name="frmprojeto" method="post" action="index.php">
 	<div id="autenticacao">
 		<div id="itensautenticacao">
 			<div id="textlogin" >

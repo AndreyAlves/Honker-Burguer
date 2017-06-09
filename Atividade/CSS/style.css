@@ -1224,7 +1224,7 @@
 
     section{
         width:1700px;
-        height:1350px;
+        height:1450px;
         margin-left:auto;
         margin-right:auto;
         margin-top:1px;
@@ -1238,6 +1238,26 @@
         background-repeat:no-repeat;
     }*/
 
+   /*_______________________________Pesquisa_________________________________________________*/
+   
+    #pesquisa{
+        width:100%;
+        height:auto;
+        border:0px solid;
+        margin-top: 10px;
+    }
+    
+    #pesquisa_input{
+        width:1500px;
+        height:80px;
+        font-size: 50px;
+    }
+    
+    #pesquisa_botao{
+        width:150px;
+        height:80px;
+        border:1px solid;
+    }
     /*_______________________________Slider_________________________________________________*/
 
     #slider{
@@ -1358,9 +1378,10 @@
 
     #conteudoproduto{
         width:1400px;
-        height:880px;
-        margin-top:65px;
-        margin-left:300px;
+        height:900px;
+        margin-top:0px;
+        margin-left:0px;
+        float:right;
         border:0px solid;
     }
 
@@ -1368,8 +1389,8 @@
         width:400px;
         height:400px;
         float:left;
-        margin-top:20px;
-        margin-left:40px;
+        margin-top:0px;
+        margin-left:0px;
         border:0px solid;
     }
 
@@ -1391,22 +1412,26 @@
 
     .infproduto{
         width:400px;
-        height:150px;
-        background-color:#D2691E;
+        height:auto;
+        border:5px solid;
+        border-radius: 15px;
         margin-top:20px;
-        border-radius:5px;
+        text-align: justify;
     }
 
     .informacoesproduto{
         width:380px;
-        height:125px;
-        color:#FFD700;
+        height:auto;
+        color:#000;
         margin:auto;
     }
 
     .nome{
-        margin-left:150px;
-        font-size:20px;
+        text-align: center;
+        color:darkorange;
+        text-decoration: overline;
+        font-family: fantasy;
+        font-size:25px;
     }
 
     .detalhes{
