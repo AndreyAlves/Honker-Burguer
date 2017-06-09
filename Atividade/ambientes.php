@@ -60,7 +60,7 @@ require_once('modulo.php');
 					
 						<?php
 			
-							$sql = "select * from tblAmbientes where status = 1 limit 2";
+							$sql = "select * from tblambientes where status = 1 limit 2";
 							$select = mysql_query($sql);
 							
 							while($rsconsulta = mysql_fetch_array($select)){
@@ -88,71 +88,6 @@ require_once('modulo.php');
 							}
 						
 						?>
-						<!--
-						<div class="infambientes1">
-							<div class="imgambientes">
-								<img class="imgloja" src="Imagens/honker2.jpg">
-							</div>
-							<div class="informacoesambientes">
-								<div class="enderecoambientes">
-									<p>
-										HONKER BURGUER - BARUERI
-									</p>
-									<p>
-										ENDEREÇO: Av.Bluffington - n°666 - SP
-									</p>
-									<p>
-										CEP:0767-410
-									</p>
-								</div>
-								<div class="logonossosambientes">
-									<img title="Carro Clássico" class="imglogonossosambientes" src="Imagens/carro1.jpg">
-								</div>
-							</div>
-						</div>
-						<div class="infambientes1">
-							<div class="imgambientes">
-								<img class="imgloja" src="Imagens/honker3.jpg">
-							</div>
-							<div class="informacoesambientes">
-								<div class="enderecoambientes">
-									<p>
-										HONKER BURGUER - JANDIRA
-									</p>
-									<p>
-										ENDEREÇO: Av.Bluffington - n°666 - SP
-									</p>
-									<p>
-										CEP:0767-410
-									</p>
-								</div>
-								<div class="logonossosambientes">
-									<img title="Carro Clássico" class="imglogonossosambientes" src="Imagens/carro2.jpg">
-								</div>
-							</div>
-						</div>
-						<div class="infambientes1">
-							<div class="imgambientes">
-								<img class="imgloja" src="Imagens/honker4.jpg">
-							</div>
-							<div class="informacoesambientes">
-								<div class="enderecoambientes">
-									<p>
-										HONKER BURGUER - ITAPEVI
-									</p>
-									<p>
-										ENDEREÇO: Av.Bluffington - n°666 - SP
-									</p>
-									<p>
-										CEP:0767-410
-									</p>
-								</div>
-								<div class="logonossosambientes">
-									<img title="Nosso Logotipo" class="imglogonossosambientes" src="Imagens/logoprincipal.jpg">
-								</div>
-							</div>
-						</div>
-						-->
 					</div>
 				</div>
 			</section>

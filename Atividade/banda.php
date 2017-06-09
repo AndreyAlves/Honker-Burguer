@@ -37,7 +37,7 @@
 			
 			<?php
 			
-				$sql = "select * from tblBanda where status = 1";
+				$sql = "select * from tblbanda where status = 1";
 				$select = mysql_query($sql);
 				
 				while($rsconsulta = mysql_fetch_array($select)){

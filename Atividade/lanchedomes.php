@@ -75,7 +75,7 @@ require_once('modulo.php');
 								pr.preco,
 								l.status,
 								substring(descricao, 1, 315) as descricao
-								from tblLanchedomes as l
+								from tbllanchedomes as l
 								inner join
 								tblProdutos as pr
 								on l.idProduto = pr.idProduto where status = 1";

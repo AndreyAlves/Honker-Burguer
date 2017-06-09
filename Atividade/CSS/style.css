@@ -1242,21 +1242,36 @@
    
     #pesquisa{
         width:100%;
-        height:auto;
-        border:0px solid;
+        height:100px;
+        background-color: darkorange;
+        border:3px solid #fff;
+        border-radius: 50px;
         margin-top: 10px;
     }
     
     #pesquisa_input{
-        width:1500px;
-        height:80px;
-        font-size: 50px;
+        width:1000px;
+        height:50px; 
+        margin-top: 20px;
+        margin-left: 300px;
+        font-size: 40px;
+        float:left;
     }
     
     #pesquisa_botao{
         width:150px;
-        height:80px;
-        border:1px solid;
+        height:55px;
+        background-color: #d3d3d3; 
+        border:1px solid #fff;
+        border-radius: 5px;
+        float:left;
+        margin-top: 20px;
+    }
+    
+    #icone_busca{
+        width:50px;
+        margin-top: 5px;
+        margin-left:50px;
     }
     /*_______________________________Slider_________________________________________________*/
 
@@ -1323,7 +1338,7 @@
         border-radius:5px;
 
     }
-
+/*
     .menusecundario li{
         margin-top:50px;
         margin-left:auto;
@@ -1333,13 +1348,12 @@
         text-align:center;
         border:0px solid;
     }
-
+*/
     #links2{
         color:#fff;
         list-style:none;
         display:inline-block;
-        height:50px;
-        position:relative; 
+        height:50px; 
         font-size:25px;
         margin-left:auto;
         margin-right:auto;
@@ -1351,19 +1365,23 @@
         color:#ffffff;
         list-style:none;
         width:150px;
-        position:relative;
-        float:left;
     }
 
     #links2 a{
         color:#FFFF00;
     }
 
-    #links2 li:hover{
-        background-color:#B22222;
+    #links2 li:hover #submenu{
+        display: block;
         border-radius:5px;
-        transition:1s;
-        box-shadow:inset 000 60px #000;
+    }
+    
+    #submenu{
+        display: none;
+    }
+    
+    #submenu li{
+        color: aqua;
     }
 
     a:link {

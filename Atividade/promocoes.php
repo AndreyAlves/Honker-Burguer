@@ -76,7 +76,7 @@ require_once('modulo.php');
 								pr.preco,
 								pr.imagem,
 								p.titulo
-								from tblProdutos as pr 
+								from tblprodutos as pr 
 								inner join
 								tblPromocoes as p
 								on pr.idProduto = p.idProduto
@@ -152,7 +152,7 @@ require_once('modulo.php');
 	
 				}
 	
-									$sql = "select * from tblNutricional where statusNutricional = 1";
+									$sql = "select * from tblnutricional where statusNutricional = 1";
 									$select = mysql_query($sql);
 									
 									while($rsconsulta = mysql_fetch_array($select)){

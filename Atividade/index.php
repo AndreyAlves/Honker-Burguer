@@ -36,7 +36,9 @@
                 <!-- ========================================= Pesquisa========================================= -->
                 <div id="pesquisa">
                     <input id="pesquisa_input" type="text" placeholder="Pesquise aqui o lanche desejado">
-                    <input id="pesquisa_botao" type="submit" value="">
+                    <div id="pesquisa_botao" type="submit" value="">
+                        <img id="icone_busca" src="icones/busca.png"/>
+                    </div>
                 </div>
                 
 				<!-- ========================================= Redes Socias ========================================= -->
@@ -57,57 +59,46 @@
 				<nav class="menusecundario">
                     <?php
                     
-                        $sql = "select * from tblcategorias";
+                        $sql_cat = "select * from tblcategorias";
                     
-                        /*$sql = "select s.subcat,
-                                        c.categoria
-                                    from tblsubcat as s
-                                    inner join tblcategorias as c
-                                    limit 4
-                                    ";*/
 
-                        $select = mysql_query($sql);
+                        $select = mysql_query($sql_cat);
 
 
-                        while($rsconsulta = mysql_fetch_array($select)){
+                        while($categoria_cat = mysql_fetch_array($select)){
 
                     ?>
-                    <table>
-                        <tr>
-                            <td>
-                                <ul id="links2">
+                   
+                        <ul id="links2">
+                            <li>
+                                <?php echo($categoria_cat['categoria']); ?>
+                                
+                                 <?php
+
+                                    $sql_sub = "select * from tblsubcat where idCategoria=".$categoria_cat['idCategoria'];
+
+                                    $select1 = mysql_query($sql_sub);
+
+                                    while($categoria_sub = mysql_fetch_array($select1)){
+
+                                ?>
+
+                                <ul id="submenu">
                                     <li>
-                                        <a href="#">
-                                            <?php echo($rsconsulta['categoria']); ?>
+                                        <a href="index.php">
+                                            <?php echo($categoria_sub['subcat']); ?>
                                         </a>
-                                         <?php
-                    
-                                            $sql = "select * from tblsubcat";
-
-                                            $select = mysql_query($sql);
-
-                                            while($rsconsulta = mysql_fetch_array($select)){
-
-                                        ?>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="index.php">
-                                                    <?php echo($rsconsulta['subcat']); ?>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        
-                                        <?php
-                                            
-                                            }
-                                            
-                                        ?>
                                     </li>
                                 </ul>
-                            </td>
-                        </tr>
-                    </table>
+
+                                <?php
+
+                                    }
+
+                                ?>
+                            </li>
+                        </ul>
+                           
 					
                     <?php
                         }

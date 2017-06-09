@@ -32,7 +32,7 @@ require_once('modulo.php');
 			
 			<?php
 			
-				$sql = "select * from tblSobre where status = 1";
+				$sql = "select * from tblsobre where status = 1";
 				$select = mysql_query($sql);
 				
 				while($rsconsulta = mysql_fetch_array($select)){
