@@ -32,8 +32,8 @@ require_once('modulo.php');
 			
 			<?php
 			
-				$sql = "select * from tblsobre where status = 1";
-				$select = mysql_query($sql);
+				$sql_sobre = "select * from tblsobre where status = 1";
+				$select = mysql_query($sql_sobre);
 				
 				while($rsconsulta = mysql_fetch_array($select)){
 				
@@ -88,26 +88,6 @@ require_once('modulo.php');
 								<?php echo($rsconsulta['texto2']) ?>
 							</p>
 						</div>
-						<!--<div class="conquistastext">
-							<p>
-								CONCURSO LOCAL - Preparo mais rápido de um sanduíche. 1960
-							</p>
-						</div>
-						<div class="conquistastext">
-							<p>
-								CONCURSO LOCAL - Melhor hamburguer vegetariano. 1961
-							</p>
-						</div>
-						<div class="conquistastext">
-							<p>
-								CONCURSO ESTUDUAL - Sanduíche mais saboroso. 1954 
-							</p>
-						</div>
-						<div class="conquistastext">
-							<p>
-								CONCURSO NACIONAL - Melhor combinação de lanches. 1954 
-							</p>
-						</div>-->
 					</div>
 				</div>
 				<!-- ========================================= Endereços ========================================= -->
@@ -128,17 +108,7 @@ require_once('modulo.php');
 			<?php } ?>
 			<!-- ========================================= Rodapé ========================================= -->
 			
-			<footer>
-				<p class="p">
-					Honker Burguer©2017. Todos os Direitos Reservados.
-				</p>
-				<p class="p">
-					Endereço: Av.Bluffington - n°666 - SP
-				</p>
-				<p class="p">
-					CEP:0767-410
-				</p>
-			</footer>
+			<?php include('rodape.php'); ?>
 		</div>
 		<!-- ========================================= Script para o slider ========================================= -->
 		<script>

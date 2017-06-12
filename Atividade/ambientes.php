@@ -93,17 +93,7 @@ require_once('modulo.php');
 			</section>
 			<!-- ========================================= Rodapé ========================================= -->
 			
-			<footer>
-				<p class="p">
-					Honker Burguer©2017. Todos os Direitos Reservados.
-				</p>
-				<p class="p">
-					Endereço: Av.Bluffington - n°666 - SP
-				</p>
-				<p class="p">
-					CEP:0767-410
-				</p>
-			</footer>
+			<?php include('rodape.php'); ?>
 		</div>
 		<!-- ========================================= Script para o slider ========================================= -->
 		<script>

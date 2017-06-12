@@ -81,6 +81,6 @@
 					setTimeout(autoSlide,1000);
 				}
 			</script>
-		</div>
+        </div>
 	</body>
 </html>

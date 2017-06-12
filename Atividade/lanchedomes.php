@@ -26,44 +26,9 @@ require_once('modulo.php');
 		<div id="principal">
 			<!-- ========================================= Cabeçalho ========================================= -->
 			<header>
-				<div id="caixaoculta">
-					<div id="conteudoheader">
-						<div id="logo">
-							<ul id="linksl">
-								<li>
-									<a href="home.php" title="HONKER BURGUER" style="text-decoration:none"> <img id="logoimg" src="Imagens/logoprincipal.jpg" alt=""/> </a>	
-								</li>
-							</ul>
-						</div>
-						<!-- ========================================= Menu Principal ========================================= -->
-						<div>
-							<nav id="menuprincipal">
-								<ul id="links">
-									<li>
-										<a href="banda.php" title="Banda"> Banda </a>
-									</li>
-									<li>
-										<a href="sobre.php" title="Sobre"> Sobre </a>
-									</li>
-									<li>
-										<a href="promocoes.php" title="Promoções"> Promoções </a>
-									</li>
-									<li>
-										<a href="ambientes.php" title="Nossos Ambientes"> Nossos Ambientes </a>
-									</li>
-									<li>
-										<a href="lanchedomes.php" title="Lanche do mês"> Lanche do mês </a>
-									</li>
-									<li>
-										<a href="faleconosco.php" title="Fale Conosco"> Fale Conosco </a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<!-- ========================================= Autenticação ========================================= -->
-						<?php include('autenticacao.php'); ?>
-					</div>
-				</div>
+				<?php
+                    include('menu.php');
+                ?>
 			</header>
 			<!-- ========================================= Conteúdo ========================================= -->
 			
@@ -85,7 +50,7 @@ require_once('modulo.php');
 				
 			?>
 			
-			<section>
+			<section id="section_p_lm">
 				<!-- ========================================= Redes Socias ========================================= -->
 				
 				<div id="redessociais">
@@ -105,22 +70,6 @@ require_once('modulo.php');
 							LANCHE DO MÊS
 						</p>
 					</div>
-					<!--<div id="conteudolanche">
-						<div id="imagemLanche">
-							
-						</div>
-						<div id="infLanche">
-							<div>
-							
-							</div>
-							<div>
-							
-							</div>
-							<div>
-							
-							</div>
-						</div>
-					</div>-->
 					<div id="produtolanchedomes">
 						<div id="imagemprodutolanchedomes">
 							<img id="hamburguerlanchedomes" src="CMS/<?php echo($rsconsulta['imagem']); ?>">
@@ -136,12 +85,11 @@ require_once('modulo.php');
 									<p>
 										<?php echo($rsconsulta['descricao']); ?>...
 									</p>
-								</div>
-								<div id="precolanchedomes">
-									<p>
+                                    <p>
 										R$ <?php echo($rsconsulta['preco']); ?> 
 									</p>
 								</div>
+									
 								<!--<div id="linkinfnutricional">
 									<a href="" title="Veja mais informações"> INF. NUTRICIONAL </a>
 								</div>-->
@@ -175,17 +123,9 @@ require_once('modulo.php');
 			
 			<!-- ========================================= Rodapé ========================================= -->
 			
-			<footer>
-				<p class="p">
-					Honker Burguer©2017. Todos os Direitos Reservados.
-				</p>
-				<p class="p">
-					Endereço: Av.Bluffington - n°666 - SP
-				</p>
-				<p class="p">
-					CEP:0767-410
-				</p>
-			</footer>
+			<?php
+                include('rodape.php');
+            ?>
 		</div>
 		<!-- ========================================= Script para o slider ========================================= -->
 		<script>

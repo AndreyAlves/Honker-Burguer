@@ -148,7 +148,7 @@
         margin-left:auto;
         margin-right:auto;
         margin-top:230px;
-        border:1px solid;
+        border:0px solid;
     }
 
     /* Imagem de fundo da section */
@@ -158,6 +158,42 @@
         background-repeat:no-repeat;
     }*/
 
+   
+    /*_______________________________Pesquisa_________________________________________________*/
+   
+    #pesquisa{
+        width:100%;
+        height:200px;
+        background-color: darkorange;
+        border:3px solid #fff;
+        border-radius: 100px;
+        margin-top: 10px;
+    }
+    
+    #pesquisa_input{
+        width:1000px;
+        height:100px; 
+        margin-top: 50px;
+        margin-left: 150px;
+        font-size: 50px;
+        float:left;
+    }
+    
+    #pesquisa_botao{
+        width:150px;
+        height:100px;
+        background-color: #d3d3d3; 
+        border:1px solid #fff;
+        border-radius: 5px;
+        float:left;
+        margin-top: 50px;
+    }
+    
+    #icone_busca{
+        width:50px;
+        margin-top: 20px;
+        margin-left:50px;
+    }
     /*_______________________________Slider_________________________________________________*/
 
     #slider{
@@ -212,8 +248,8 @@
     /*_______________________________Menu Secundario_________________________________________________*/
 
     .menusecundario{
-        width:30%;
-        height:6000px;
+        width:40%;
+        height:auto;
         float:left;
         margin-top:30px;
         background-color:#800000;
@@ -224,25 +260,15 @@
 
     }
 
-    .menusecundario li{
-        margin-top:50px;
-        margin-left:auto;
-        list-style:none;
-        font-size:70px;
-        float:left;
-        text-align:center;
-        border:1px solid;
-    }
-
     #links2{
         color:#fff;
         list-style:none;
         display:inline-block;
-        height:50px;
-        position:relative; 
-        font-size:25px;
+        height:50px; 
+        font-size:70px;
         margin-left:auto;
         margin-right:auto;
+        margin-bottom: 70px;
         text-decoration:none;
 
     }
@@ -251,21 +277,52 @@
         color:#ffffff;
         list-style:none;
         width:150px;
-        position:relative;
-        float:left;
     }
 
     #links2 a{
         color:#FFFF00;
     }
 
-    #links2 li:hover{
-        background-color:#B22222;
+    #links2 li:hover #submenu{
+        display: block;
         border-radius:5px;
-        transition:1s;
-        box-shadow:inset 000 60px #000;
+        margin-bottom: 10px;
+    }
+    
+    #submenu{
+        display: none;
     }
 
+    #linkextra{
+        width: 100%;
+        list-style:none;
+        display:inline-block;
+        background-color: #000;
+        border-radius: 15px;
+        height:50px; 
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 70px;
+
+    }
+
+    #linkextra li{
+        color:#ffffff;
+        list-style:none;
+        width:150px;
+    }
+
+    #linkextra a{
+        color:#FFFF00;
+    }
+    
+    #linkextra p{
+        font-size:50px;
+        text-decoration:none;
+        margin-left:125px;
+        margin-top: 0px;
+    }
+    
     a:link {
      color:#fff;
     }
@@ -277,24 +334,25 @@
     /*_______________________________Caixa do produto_________________________________________________*/
 
     #conteudoproduto{
-        width:70%;
-        height:880px;
-        margin-top:65px;
-        margin-left:600px;
-        border:1px solid;
+        width:60%;
+        height:auto;
+        margin-top: 0px;
+        border:0px solid;
+        float: right;
     }
 
     .produto{
-        width:70%;
-        height:1000px;
+        width:auto;
+        height:auto;
         float:left;
-        margin:auto;
-        border:1px solid;
+        margin-top:0px;
+        margin-left:0px;
+        border:0px solid;
     }
 
     .imagemproduto{
-        width:600px;
-        height:600px;
+        width:800px;
+        height:650px;
         background-color:#F5DEB3;
         margin:auto;
         margin-top:30px;
@@ -302,32 +360,46 @@
     }
 
     .hamburguer{
-        width:550px;
-        height:550px;
+        width:750px;
+        height:600px;
         margin-top:25px;
         margin-left:25px;
     }
 
     .infproduto{
-        width:100%;
-        height:300px;
-        background-color:#D2691E;
+        width:800px;
+        height:auto;
+        border:5px solid;
+        border-radius: 15px;
         margin-top:20px;
-        border-radius:5px;
+        text-align: justify;
     }
 
     .informacoesproduto{
-        width:800px;
+        width:780px;
         height:auto;
-        color:#FFD700;
-        font-size: 20px;
+        color:#000;
         margin:auto;
-        border:1px solid;
+        border:0px solid;
+        font-size: 30px;
     }
 
-    .nome{
+    #nome{
+        width:780px;
+        height:auto;
+        color:#000;
+        margin:auto;
+        background-color: #800000;
+        border:3px solid;
+        border-radius: 5px;
+    }
+    
+    #nome p{
         text-align: center;
-        font-size:50px;
+        color:darkorange;
+        text-decoration: overline;
+        font-family: fantasy;
+        font-size:70px;
     }
 
     .detalhes{
@@ -340,7 +412,7 @@
         color:red;
         float:right;
     }
-
+    
     /*___________________________________Redes Sociais_____________________________________________*/
 
     #redessociais{
@@ -708,7 +780,7 @@
     
    /*============================================================================== Promoções ==============================================================================*/
 
-    #sectionpromocao{
+    #section_p_lm{
         width:1430px;
         height:2500px;
         margin-left:auto;
@@ -793,14 +865,12 @@
     }
 
     #infprodutopromocao{
-        width:100%;
+        width:1430px;
         height:auto;
-        background-color:#D2691E;
-        margin-top:50px;
-        margin-left:0px;
-        border-radius:5px;
-        color:#FFD700;
-        border:1px solid;
+        border:5px solid;
+        border-radius: 15px;
+        margin-top:20px;
+        text-align: justify;
         
     }
 
@@ -812,25 +882,28 @@
     }
 
     #nomeprodutopromocao{
-        width:1000px;
-        height:200px;
+        width:1400px;
+        height:auto;
+        color:#000;
         margin:auto;
-        background-color:#000;
-        border:1px solid;
+        background-color: #800000;
+        border:3px solid;
+        border-radius: 5px;
     }
 
     #nomeprodutopromocao p{
-        margin-top:20px;
-        text-align:center;
-        font-size:100px;
+        text-align: center;
+        color:darkorange;
+        text-decoration: overline;
+        font-family: fantasy;
+        font-size:90px;
     }
 
     #descprodutopromocao{
         width:1400px;
         height:auto;
         margin-top:0px;
-        margin-left:20px;
-        border:0px solid;
+        border:0px solid /*#D2691E*/;
     }
 
     #descprodutopromocao p{
@@ -866,6 +939,69 @@
 
     .descinfnutricional p{
         font-size:20px;
+    }
+    
+    #infprodutolanchedomes{
+        width:1430px;
+        height:auto;
+        border:5px solid;
+        border-radius: 15px;
+        margin-top:20px;
+        text-align: justify;
+    }
+
+    #informacoesprodutolanchedomes{
+        width:780px;
+        height:auto;
+        color:#000;
+        margin-left: 10px;
+        border:0px solid;
+        font-size: 60px;
+    }
+    
+     #nomelanchedomes{
+        width:1400px;
+        height:auto;
+        color:#000;
+        margin:auto;
+        background-color: #800000;
+        border:3px solid;
+        border-radius: 5px;
+    }
+
+    #nomelanchedomes p{
+        text-align: center;
+        color:darkorange;
+        text-decoration: overline;
+        font-family: fantasy;
+        font-size:90px;
+    }
+
+    #desclanchedomes{
+        width:1400px;
+        height:auto;
+        margin-top:0px;
+        border:0px solid /*#D2691E*/;
+    }
+
+    #desclanchedomes p{
+        color:#000;
+        font-size:65px;
+        text-align:justify;
+    }
+
+    #precolanchedomes{
+        width:200px;
+        height:60px;
+        border:0px solid #FFD700; 
+        float:left;
+    }
+
+    #precolanchedomes p{
+        margin:auto;
+        color:#FFD700;
+        font-size:35px;
+        text-align:justify;
     }
 
     /*============================================================================== Ambientes ==============================================================================*/
@@ -985,11 +1121,301 @@
         float:right;
     }
     
+   
+   /*============================================================================== Lanche do mês ==============================================================================*/
+
+    #conteudolanchedomes{
+        width:1500px;
+        height:auto;
+        margin:auto;
+        border:0px solid;
+    }
+
+    #conteudolanchedomesslider{
+        width:1500px;
+        height:700px;
+        margin-top:80px;
+        border:0px solid;
+    }
+
+    #titulolanchedomes{
+        width:1440px;
+        height:200px;
+        background-color:#000;
+        border-radius:20px;
+        margin-top:10px;
+        float:left;
+    }
+
+    #titulolanchedomes p{
+        color:#fff;
+        text-align: center;
+        margin-right:25px;
+        margin-top:30px;
+        font-size:130px;
+    }
+
+    #produtolanchedomes{
+        width:auto;
+        height:auto;
+        margin-left:0px;
+        border:0px solid;
+    }
+
+    #imagemprodutolanchedomes{
+        width:1300px;
+        height:1200px;
+        background-color:#F5DEB3;
+        margin-top:100px;
+        margin-left:60px;
+        border-radius:15px;
+        border:0px solid;
+    }
+
+    #hamburguerlanchedomes{
+        width:1200px;
+        height:950px;
+        margin-top:25px;
+        margin-left:50px;
+        border-radius:5px;	
+    }
+
+    #infprodutolanchedomes{
+        width:1430px;
+        height:auto;
+        border:5px solid;
+        border-radius: 15px;
+        margin-top:20px;
+        text-align: justify;
+    }
+
+    #informacoesprodutolanchedomes{
+        width:780px;
+        height:auto;
+        color:#000;
+        margin-left: 10px;
+        border:0px solid;
+        font-size: 60px;
+    }
+
+    #nomelanchedomes{
+        width:1400px;
+        height:auto;
+        color:#000;
+        margin:auto;
+        background-color: #800000;
+        border:3px solid;
+        border-radius: 5px;
+    }
+
+    #nomelanchedomes p{
+        text-align: center;
+        color:darkorange;
+        text-decoration: overline;
+        font-family: fantasy;
+        font-size:90px;
+    }
+
+    #desclanchedomes{
+        width:1400px;
+        height:auto;
+        margin-top:0px;
+        border:0px solid /*#D2691E*/;
+    }
+
+    #desclanchedomes p{
+        color:#000;
+        font-size:65px;
+        text-align:justify;
+    }
+
+    #precolanchedomes{
+        width:200px;
+        height:60px;
+        border:0px solid #FFD700; 
+        float:left;
+    }
+
+    #precolanchedomes p{
+        margin:auto;
+        color:#FFD700;
+        font-size:35px;
+        text-align:justify;
+    }
+
+    
+
+    #titulolanchedomesslider{
+        display: none;
+    }
+
+    #titulolanchedomesslider p{
+        display: none;
+    }
+
+    /*_______________________________Slider Lanche do mês_________________________________________________*/
+
+    #sliderlanchedomes{
+       display: none;
+    }
+
+    #sliderlanchedomes>img{
+       display: none;
+    }
+
+    #sliderlanchedomes>.button{
+        display: none;
+    }
+
+    #sliderlanchedomes>#btn1:hover{
+        display: none;
+    }
+
+    #sliderlanchedomes>#btn2:hover{
+        display: none;
+    }
+
+    #sliderlanchedomes>#btn2{
+        display: none;
+    } 
+    
+       /*============================================================================== Faleconosco ==============================================================================*/
+
+    #titulocadastro{
+        width:1430px;
+        height:200px;
+        background-color:#000000;
+        border-radius:20px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 20px;
+
+    }
+
+    #titulocadastro p{
+        color:#fff;
+        text-align: center;
+        margin-right:25px;
+        margin-top:60px;
+        font-size:120px;
+    }
+
+    #content {
+        width:100%;
+        height:900px;
+    }
+
+    #cadastro {
+        width:100%;
+        height:400px;
+        margin-bottom:50px;
+    }
+
+    #tblcadastro {
+        width:1430px;
+        height:800px;
+        margin-right:auto;
+        margin-top:50px;
+        border:solid 2px;
+        border-color:#000;
+        border-radius:5px 5px 5px 5px;
+        box-shadow:10px 10px 10px #ccc;
+    }
+
+    .titulo {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:18px;
+        text-align:center;
+        color:#0099FF;
+        font-weight:bold;
+    }
+
+    .texto {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:12px;
+        text-align:justify;
+    }
+
+
+    .tblcadastro_td{
+        width:200px;
+        height:150px;
+        border:solid 1px;
+        border-color:#CCCCCC;
+        font-size:100px;
+        font-weight:bold;
+        text-align:center;
+        margin-top: 50px;
+        color:#fff;
+        border-color:#DCDCDC;
+        background-color:#FF8C00;
+    }
+
+
+    .tblcadastro_td_campos{
+        width:300px;
+        height:200px;
+        border:solid 1px;
+        border-color:#CCCCCC;
+        font-size:40px;
+        font-weight:bold;
+        height:40px;
+        text-align:left;
+        border-color:#DCDCDC;
+    }
+
+    .titulo_tabela {
+        background-color:#800000;
+        font-size:55px;
+        text-align:center;
+        height:125px;
+        color:#FFFF00;
+        margin-top:30px;
+        border-radius:0px;
+    }
+
+    .caixadetexto{
+        width:500px;
+        height:80px;
+        font-size:25px;
+        resize: none;
+    }
+
+    #tbl_sexo{
+        width:300px;
+        height:100px;
+        border:solid 0px;
+        font-size:30px;
+        font-weight:bold;
+        color:#000;
+        background-color:#D3D3D3;
+    }
+
+    .selecaodesexo{
+        width:30px;
+        height:30px;
+    }
+
+    .botao{
+        width:100px;
+        height:50px;
+        background-color:#800000;
+        color:#FFFF00;
+    }
+
+    .botao2{
+        width:100px;
+        height:50px;
+        margin-left:400px;
+        background-color:#800000;
+        color:#FFFF00;
+    }
+
     /*________________________________________________________________________________*/
 
     footer{
-        width:1500px;
-        height:300px;
+        width:1430px;
+        height:320px;
         opacity:0.7;
         margin-left:auto;
         margin-right:auto;
@@ -998,11 +1424,24 @@
     }
 
     .p{
-        text-align:center;
+        width: 1000px;
+        margin-left: 100px;
         font-weight:bold;
         font-size:40px;
+        border:0px solid;
     }
     
+    /*___________________________________Redes Sociais_____________________________________________*/
+    
+    #redessociais_responsivo{
+        width:90px;
+        height:265px;
+        float:right;
+        margin-right: 50px;
+        margin-top: -255px;
+    }
+    
+
 }
 
 /* ========================================================================================================================================================================================================================================*/
@@ -1357,6 +1796,7 @@
         font-size:25px;
         margin-left:auto;
         margin-right:auto;
+        margin-bottom: 70px;
         text-decoration:none;
 
     }
@@ -1374,16 +1814,45 @@
     #links2 li:hover #submenu{
         display: block;
         border-radius:5px;
+        margin-left: 70px;
+        margin-bottom: 10px;
     }
     
     #submenu{
         display: none;
     }
-    
-    #submenu li{
-        color: aqua;
+
+    #linkextra{
+        width: 100%;
+        list-style:none;
+        display:inline-block;
+        background-color: #000;
+        border-radius: 15px;
+        height:50px; 
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 235px;
+        margin-bottom: 70px;
+
     }
 
+    #linkextra li{
+        color:#ffffff;
+        list-style:none;
+        width:150px;
+    }
+
+    #linkextra a{
+        color:#FFFF00;
+    }
+    
+    #linkextra p{
+        font-size:25px;
+        text-decoration:none;
+        margin-left:45px;
+        margin-top: 10px;
+    }
+    
     a:link {
      color:#fff;
     }
@@ -1396,16 +1865,14 @@
 
     #conteudoproduto{
         width:1400px;
-        height:900px;
-        margin-top:0px;
-        margin-left:0px;
+        height:auto;
         float:right;
         border:0px solid;
     }
 
     .produto{
-        width:400px;
-        height:400px;
+        width:auto;
+        height:auto;
         float:left;
         margin-top:0px;
         margin-left:0px;
@@ -1442,9 +1909,20 @@
         height:auto;
         color:#000;
         margin:auto;
+        border:0px solid;
     }
 
-    .nome{
+    #nome{
+        width:380px;
+        height:auto;
+        color:#000;
+        margin:auto;
+        background-color: #800000;
+        border:3px solid;
+        border-radius: 5px;
+    }
+    
+    #nome p{
         text-align: center;
         color:darkorange;
         text-decoration: overline;
@@ -1901,7 +2379,7 @@
     
    /*============================================================================== Promoções ==============================================================================*/
 
-    #sectionpromocao{
+    #section_p_lm{
         width:1700px;
         height:auto;
         margin-left:auto;
@@ -2186,11 +2664,428 @@
         float:right;
     }
     
+    /*============================================================================== Lanche do mês ==============================================================================*/
+
+    #conteudolanchedomes{
+        width:1500px;
+        height:auto;
+        margin:auto;
+        border:0px solid;
+    }
+
+    #conteudolanchedomesslider{
+        width:1500px;
+        height:700px;
+        margin-top:80px;
+        border:0px solid;
+    }
+
+    #titulolanchedomes{
+        width:1500px;
+        height:100px;
+        margin:auto;
+        background-color:#000;
+        border-radius:20px;
+        margin-top:5px;
+    }
+
+    #titulolanchedomes p{
+        color:#fff;
+        float:right;
+        margin-right:25px;
+        margin-top:23px;
+        font-size:65px;
+    }
+
+    /*
+    #conteudolanche{
+        width:100%;
+        height:auto;
+        border:1px solid;
+    }
+
+    #imagemLanche{
+        width:400px;
+        height:400px;
+        border:1px solid;
+    }
+
+    #infLanche{
+        width:1000px;
+        height:400px;
+        margin-top:-400px;
+        margin-left:500px;
+        border:1px solid;
+    }*/
+
+    /*************************/
+
+    #produtolanchedomes{
+        width:auto;
+        height:auto;
+        margin-left:0px;
+        border:0px solid;
+    }
+
+    #imagemprodutolanchedomes{
+        width:450px;
+        height:400px;
+        background-color:#F5DEB3;
+        margin-top:30px;
+        margin-left:60px;
+        border-radius:15px;
+        border:0px solid;
+    }
+
+    #hamburguerlanchedomes{
+        width:400px;
+        height:350px;
+        margin-top:25px;
+        margin-left:25px;
+        border-radius:5px;	
+    }
+
+    #infprodutolanchedomes{
+        width:auto;
+        height:auto;
+        background-color:#D2691E;
+        margin-left:550px;
+        margin-top:-390px;
+        border-radius:5px;
+        border:0px solid;
+    }
+
+    #informacoesprodutolanchedomes{
+        width:1000px;
+        height:430px;
+        border:0px solid;
+    }
+
+    #nomelanchedomes{
+        width:450px;
+        height:100px;
+        background-color:#000;
+        border-radius:5px;
+        margin-left:auto;
+        margin-right:auto;
+        border:1px solid #FFD700;
+    }
+
+    #nomelanchedomes p{
+        font-size:45px;
+        color:#FFD700;
+        margin-top:0px;
+        margin-left:5px;
+        text-align:center;
+    }
+
+    #desclanchedomes{
+        width:950px;
+        height:auto;
+        margin-top:0px;
+        border:0px solid /*#D2691E*/;
+    }
+
+    #desclanchedomes p{
+        color:#FFD700;
+        font-size:35px;
+        text-align:justify;
+    }
+
+    #precolanchedomes{
+        width:200px;
+        height:60px;
+        border:0px solid #FFD700; 
+        float:left;
+    }
+
+    #precolanchedomes p{
+        margin:auto;
+        color:#FFD700;
+        font-size:35px;
+        text-align:justify;
+    }
+
+    #linkinfnutricional{
+        width:220px;
+        height:auto;
+        float:right;
+        margin-top:0px;
+        background-color:#000;
+        border:1px solid #FFD700;
+    }
+
+    #linkinfnutricional a{
+        margin-left:0px;
+        margin-top:50px;
+        color:#FFD700;
+        font-size:20px;
+    }
+
+    #titulolanchedomesslider{
+        width:1500px;
+        height:100px;
+        margin:auto;
+        background-color:#000000;
+        border-radius:20px;
+        margin-top:5px;
+    }
+
+    #titulolanchedomesslider p{
+        color:#fff;
+        float:right;
+        margin-right:25px;
+        margin-top:23px;
+        font-size:65px;
+    }
+
+    /*_______________________________Slider Lanche do mês_________________________________________________*/
+
+    #sliderlanchedomes{
+        width:1500px;
+        height:500px;
+        margin-top:50px;
+        border:1px solid #fff;
+        position:relative;
+    }
+
+    #sliderlanchedomes>img{
+        width:100%;
+        height:100%;
+        position:absolute;
+        border-radius:5px;
+    }
+
+    #sliderlanchedomes>.button{
+        width:40px;
+        height:40px;
+        position:absolute;
+        border:none;
+        border-radius:25px;
+        top:225px;
+        background-color:#800000;
+        color:#fff;
+        font-size:20px;
+        border:1px solid;
+    }
+
+    #sliderlanchedomes>#btn1:hover{
+        box-shadow:5px 0px 5px 0px #ffffff;
+        transition:0.8s;
+        -webkit-transform:scale(1.3);
+        -ms-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+    #sliderlanchedomes>#btn2:hover{
+        box-shadow:-5px 0px 5px 0px #ffffff;
+        transition:0.8s;
+        -webkit-transform:scale(1.3);
+        -ms-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+    #sliderlanchedomes>#btn2{
+        position:relative;
+        margin-left:1460px;
+
+    }
+    
+    /*============================================================================== Faleconosco ==============================================================================*/
+
+    #titulocadastro{
+        width:1500px;
+        height:100px;
+        background-color:#000000;
+        border-radius:20px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 20px;
+
+    }
+
+    #titulocadastro p{
+        color:#fff;
+        float:right;
+        margin-right:25px;
+        margin-top:23px;
+        font-size:65px;
+    }
+
+    #content {
+        width:100%;
+        height:900px;
+    }
+
+    #cadastro {
+        width:100%;
+        height:400px;
+        margin-bottom:50px;
+    }
+
+    #tblcadastro {
+        width:800px;
+        height:800px;
+        margin-left:450px;
+        margin-right:auto;
+        margin-top:50px;
+        border:solid 2px;
+        border-color:#000;
+        border-radius:5px 5px 5px 5px;
+        box-shadow:10px 10px 10px #ccc;
+    }
+
+
+    #tblmenu {
+        width:100%;
+        height:100%;
+        border:solid 2px;
+    }
+
+    #tblmenu td {
+        border:solid 1px;
+        background-color:#FFFF00;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:14px;
+        color:#000000;
+        font-weight:bold;
+        text-align:center;
+        width:20%;
+    }
+
+    a {
+        text-decoration:none;
+        color:#333333;
+    }
+    a:hover {
+        /*color:#CCCCCC;
+        font-size:16px;*/
+    }
+
+    #tblmenu td:hover {
+        background-color:#FFFFCC;
+        font-size:18px;
+    }
+
+    #conteudo1 {
+        width:294px;
+        height:300px;
+        background-color:#CCCCCC;
+        /*position:absolute;*/
+        float:left;
+    }
+    #conteudo2 {
+        width:670px;
+        height:300px;
+        background-color:#FFFFFF;
+        /*position:absolute;
+        margin-left:294px;*/
+        float:right;
+        padding:2px;
+        overflow:auto;
+    }
+
+    #conteudo3 {
+        width:670px;
+        height:300px;
+        background-color:#FFFFFF;
+        /*position:absolute;
+        margin-left:294px;*/
+        float:left;
+    }
+
+    .titulo {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:18px;
+        text-align:center;
+        color:#0099FF;
+        font-weight:bold;
+    }
+
+    .texto {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:12px;
+        text-align:justify;
+    }
+
+
+    .tblcadastro_td{
+        width:300px;
+        height:100px;
+        border:solid 1px;
+        border-color:#CCCCCC;
+        font-size:30px;
+        font-weight:bold;
+        text-align:center;
+        color:#fff;
+        border-color:#DCDCDC;
+        background-color:#FF8C00;
+    }
+
+
+    .tblcadastro_td_campos{
+        width:100px;
+        border:solid 1px;
+        border-color:#CCCCCC;
+        font-size:12px;
+        font-weight:bold;
+        height:40px;
+        text-align:left;
+        border-color:#DCDCDC;
+    }
+
+    .titulo_tabela {
+        background-color:#800000;
+        font-size:55px;
+        text-align:center;
+        height:125px;
+        color:#FFFF00;
+        margin-top:30px;
+        border-radius:0px;
+    }
+
+    .caixadetexto{
+        width:500px;
+        height:80px;
+        font-size:25px;
+        resize: none;
+    }
+
+    #tbl_sexo{
+        width:300px;
+        height:100px;
+        border:solid 0px;
+        font-size:30px;
+        font-weight:bold;
+        color:#000;
+        background-color:#D3D3D3;
+    }
+
+    .selecaodesexo{
+        width:30px;
+        height:30px;
+    }
+
+    .botao{
+        width:100px;
+        height:50px;
+        background-color:#800000;
+        color:#FFFF00;
+    }
+
+    .botao2{
+        width:100px;
+        height:50px;
+        margin-left:400px;
+        background-color:#800000;
+        color:#FFFF00;
+    }
+
  /*________________________________________________________________________________*/
 
     footer{
         width:100%;
-        height:125px;
+        height:auto;
         opacity:0.7;
         margin-left:auto;
         margin-right:auto;
@@ -2204,426 +3099,10 @@
         font-size:20px;
     }
     
+    #redessociais_responsivo{
+        display: none;
+    }
+    
 }
 
 
-
-
-
-
-/*============================================================================== Lanche do mês ==============================================================================*/
-
-#conteudolanchedomes{
-	width:1500px;
-	height:auto;
-	margin:auto;
-	border:0px solid;
-}
-
-#conteudolanchedomesslider{
-	width:1500px;
-	height:700px;
-	margin-top:80px;
-	border:0px solid;
-}
-
-#titulolanchedomes{
-	width:1500px;
-	height:100px;
-	margin:auto;
-	background-color:#000;
-	border-radius:20px;
-	margin-top:5px;
-}
-
-#titulolanchedomes p{
-	color:#fff;
-	float:right;
-	margin-right:25px;
-	margin-top:23px;
-	font-size:65px;
-}
-
-/*
-#conteudolanche{
-	width:100%;
-	height:auto;
-	border:1px solid;
-}
-
-#imagemLanche{
-	width:400px;
-	height:400px;
-	border:1px solid;
-}
-
-#infLanche{
-	width:1000px;
-	height:400px;
-	margin-top:-400px;
-	margin-left:500px;
-	border:1px solid;
-}*/
-
-/*************************/
-
-#produtolanchedomes{
-	width:auto;
-	height:auto;
-	margin-left:0px;
-	border:0px solid;
-}
-
-#imagemprodutolanchedomes{
-	width:450px;
-	height:400px;
-	background-color:#F5DEB3;
-	margin-top:30px;
-	margin-left:60px;
-	border-radius:15px;
-	border:0px solid;
-}
-
-#hamburguerlanchedomes{
-	width:400px;
-	height:350px;
-	margin-top:25px;
-	margin-left:25px;
-	border-radius:5px;	
-}
-
-#infprodutolanchedomes{
-	width:auto;
-	height:auto;
-	background-color:#D2691E;
-	margin-left:550px;
-	margin-top:-390px;
-	border-radius:5px;
-	border:0px solid;
-}
-
-#informacoesprodutolanchedomes{
-	width:1000px;
-	height:430px;
-	border:0px solid;
-}
-
-#nomelanchedomes{
-	width:450px;
-	height:100px;
-	background-color:#000;
-	border-radius:5px;
-	margin-left:auto;
-	margin-right:auto;
-	border:1px solid #FFD700;
-}
-
-#nomelanchedomes p{
-	font-size:45px;
-	color:#FFD700;
-	margin-top:0px;
-	margin-left:5px;
-	text-align:center;
-}
-
-#desclanchedomes{
-	width:950px;
-	height:auto;
-	margin-top:0px;
-	border:0px solid /*#D2691E*/;
-}
-
-#desclanchedomes p{
-	color:#FFD700;
-	font-size:35px;
-	text-align:justify;
-}
-
-#precolanchedomes{
-	width:200px;
-	height:60px;
-	border:0px solid #FFD700; 
-	float:left;
-}
-
-#precolanchedomes p{
-	margin:auto;
-	color:#FFD700;
-	font-size:35px;
-	text-align:justify;
-}
-
-#linkinfnutricional{
-	width:220px;
-	height:auto;
-	float:right;
-	margin-top:0px;
-	background-color:#000;
-	border:1px solid #FFD700;
-}
-
-#linkinfnutricional a{
-	margin-left:0px;
-	margin-top:50px;
-	color:#FFD700;
-	font-size:20px;
-}
-
-#titulolanchedomesslider{
-	width:1500px;
-	height:100px;
-	margin:auto;
-	background-color:#000000;
-	border-radius:20px;
-	margin-top:5px;
-}
-
-#titulolanchedomesslider p{
-	color:#fff;
-	float:right;
-	margin-right:25px;
-	margin-top:23px;
-	font-size:65px;
-}
-
-/*_______________________________Slider Lanche do mês_________________________________________________*/
-
-#sliderlanchedomes{
-	width:1500px;
-	height:500px;
-	margin-top:50px;
-	border:1px solid #fff;
-	position:relative;
-}
-
-#sliderlanchedomes>img{
-	width:100%;
-	height:100%;
-	position:absolute;
-	border-radius:5px;
-}
-
-#sliderlanchedomes>.button{
-	width:40px;
-	height:40px;
-	position:absolute;
-	border:none;
-	border-radius:25px;
-	top:225px;
-	background-color:#800000;
-	color:#fff;
-	font-size:20px;
-	border:1px solid;
-}
-
-#sliderlanchedomes>#btn1:hover{
-	box-shadow:5px 0px 5px 0px #ffffff;
-	transition:0.8s;
-	-webkit-transform:scale(1.3);
-	-ms-transform:scale(1.3);
-	transform:scale(1.3);
-}
-
-#sliderlanchedomes>#btn2:hover{
-	box-shadow:-5px 0px 5px 0px #ffffff;
-	transition:0.8s;
-	-webkit-transform:scale(1.3);
-	-ms-transform:scale(1.3);
-	transform:scale(1.3);
-}
-
-#sliderlanchedomes>#btn2{
-	position:relative;
-	margin-left:1460px;
-	
-}
-
-/*============================================================================== Faleconosco ==============================================================================*/
-
-#titulocadastro{
-	width:1500px;
-	height:100px;
-	background-color:#000000;
-	border-radius:20px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top: 20px;
-
-}
-
-#titulocadastro p{
-	color:#fff;
-	float:right;
-	margin-right:25px;
-	margin-top:23px;
-	font-size:65px;
-}
-
-#content {
-	width:100%;
-	height:900px;
-}
-
-#cadastro {
-	width:100%;
-	height:400px;
-	margin-bottom:50px;
-}
-
-#tblcadastro {
-	width:800px;
-	height:800px;
-	margin-left:450px;
-	margin-right:auto;
-	margin-top:50px;
-	border:solid 2px;
-	border-color:#000;
-	border-radius:5px 5px 5px 5px;
-	box-shadow:10px 10px 10px #ccc;
-}
-
-
-#tblmenu {
-	width:100%;
-	height:100%;
-	border:solid 2px;
-}
-
-#tblmenu td {
-	border:solid 1px;
-	background-color:#FFFF00;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:14px;
-	color:#000000;
-	font-weight:bold;
-	text-align:center;
-	width:20%;
-}
-
-a {
-	text-decoration:none;
-	color:#333333;
-}
-a:hover {
-	/*color:#CCCCCC;
-	font-size:16px;*/
-}
-
-#tblmenu td:hover {
-	background-color:#FFFFCC;
-	font-size:18px;
-}
-
-#conteudo1 {
-	width:294px;
-	height:300px;
-	background-color:#CCCCCC;
-	/*position:absolute;*/
-	float:left;
-}
-#conteudo2 {
-	width:670px;
-	height:300px;
-	background-color:#FFFFFF;
-	/*position:absolute;
-	margin-left:294px;*/
-	float:right;
-	padding:2px;
-	overflow:auto;
-}
-
-#conteudo3 {
-	width:670px;
-	height:300px;
-	background-color:#FFFFFF;
-	/*position:absolute;
-	margin-left:294px;*/
-	float:left;
-}
-
-.titulo {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:18px;
-	text-align:center;
-	color:#0099FF;
-	font-weight:bold;
-}
-
-.texto {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	text-align:justify;
-}
-
-
-.tblcadastro_td{
-	width:300px;
-	height:100px;
-	border:solid 1px;
-	border-color:#CCCCCC;
-	font-size:30px;
-	font-weight:bold;
-	text-align:center;
-	color:#fff;
-	border-color:#DCDCDC;
-	background-color:#FF8C00;
-}
-
-
-.tblcadastro_td_campos{
-	width:100px;
-	border:solid 1px;
-	border-color:#CCCCCC;
-	font-size:12px;
-	font-weight:bold;
-	height:40px;
-	text-align:left;
-	border-color:#DCDCDC;
-}
-
-.titulo_tabela {
-	background-color:#800000;
-	font-size:55px;
-	text-align:center;
-	height:125px;
-	color:#FFFF00;
-	margin-top:30px;
-	border-radius:0px;
-}
-
-.caixadetexto{
-	width:500px;
-	height:80px;
-	font-size:25px;
-	resize: none;
-}
-
-#tbl_sexo{
-	width:300px;
-	height:100px;
-	border:solid 0px;
-	font-size:30px;
-	font-weight:bold;
-	color:#000;
-	background-color:#D3D3D3;
-}
-
-.selecaodesexo{
-	width:30px;
-	height:30px;
-}
-
-.botao{
-	width:100px;
-	height:50px;
-	background-color:#800000;
-	color:#FFFF00;
-}
-
-.botao2{
-	width:100px;
-	height:50px;
-	margin-left:400px;
-	background-color:#800000;
-	color:#FFFF00;
-}

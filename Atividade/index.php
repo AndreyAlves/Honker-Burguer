@@ -7,6 +7,8 @@
     $categoria = "";
 
 	require_once('modulo.php');
+
+    
 	
 ?>
 <!DOCTYPE html>
@@ -29,38 +31,42 @@
 			</header>
 			<!-- ========================================= Conteúdo ========================================= -->
 			<section>
-				<!-- ========================================= Slider ========================================= -->
-				
-				<?php include('slider.php'); ?>
                 
-                <!-- ========================================= Pesquisa========================================= -->
-                <div id="pesquisa">
-                    <input id="pesquisa_input" type="text" placeholder="Pesquise aqui o lanche desejado">
-                    <div id="pesquisa_botao" type="submit" value="">
-                        <img id="icone_busca" src="icones/busca.png"/>
+                <!-- ========================================= Slider ========================================= -->
+
+                <?php include('slider.php'); ?>
+
+                <form name="frmBusca" method="post" action="index.php">
+                    <!-- ========================================= Pesquisa========================================= -->
+                    <div id="pesquisa">
+                        <input id="pesquisa_input" type="text" placeholder="Pesquise aqui o lanche desejado" name="txtPesquisar">
+                        <input id="pesquisa_botao" type="submit" value="" name="pesquisar">
+                            <!--<img id="icone_busca" src="icones/busca.png"/>
+                        </div>-->
+                    </div>
+                </form>
+                
+                <!-- ========================================= Redes Socias ========================================= -->
+
+                <div id="redessociais">
+                    <div id="facebook">
+                        <a href="" title="Visite nossa Página"> <img id="logoF" src="Imagens/logoF.png" alt=""> </a>
+                    </div>
+                    <div id="twitter">
+                        <a href="" title="Nosso Twitter"> <img id="logoT" src="Imagens/logoT.png" alt=""> </a>
+                    </div>
+                    <div id="instagram">
+                        <a href="" title="Nosso Instagram"> <img id="logoI" src="Imagens/logoI.png" alt=""> </a>
                     </div>
                 </div>
-                
-				<!-- ========================================= Redes Socias ========================================= -->
-				
-				<div id="redessociais">
-					<div id="facebook">
-						<a href="" title="Visite nossa Página"> <img id="logoF" src="Imagens/logoF.png" alt=""> </a>
-					</div>
-					<div id="twitter">
-						<a href="" title="Nosso Twitter"> <img id="logoT" src="Imagens/logoT.png" alt=""> </a>
-					</div>
-					<div id="instagram">
-						<a href="" title="Nosso Instagram"> <img id="logoI" src="Imagens/logoI.png" alt=""> </a>
-					</div>
-				</div>
-				<!-- ========================================= Menu Secundário ========================================= -->
-                
-				<nav class="menusecundario">
+                <!-- ========================================= Menu Secundário ========================================= -->
+
+                <nav class="menusecundario">
+                    
                     <?php
-                    
+
                         $sql_cat = "select * from tblcategorias";
-                    
+
 
                         $select = mysql_query($sql_cat);
 
@@ -68,11 +74,11 @@
                         while($categoria_cat = mysql_fetch_array($select)){
 
                     ?>
-                   
+
                         <ul id="links2">
                             <li>
-                                <?php echo($categoria_cat['categoria']); ?>
-                                
+                                <a href="index.php?categoria=<?php echo($categoria_cat['idCategoria']); ?>"><p><?php echo($categoria_cat['categoria']); ?></p></a>
+
                                  <?php
 
                                     $sql_sub = "select * from tblsubcat where idCategoria=".$categoria_cat['idCategoria'];
@@ -85,12 +91,10 @@
 
                                 <ul id="submenu">
                                     <li>
-                                        <a href="index.php">
-                                            <?php echo($categoria_sub['subcat']); ?>
-                                        </a>
+                                        <a href="index.php?subcategoria=<?php echo($categoria_sub['idSubCat']); ?>"><p><?php echo($categoria_sub['subcat']); ?></p></a>
                                     </li>
                                 </ul>
-
+                                
                                 <?php
 
                                     }
@@ -98,69 +102,99 @@
                                 ?>
                             </li>
                         </ul>
-                           
-					
+
                     <?php
                         }
                     ?>
-				</nav>
-                
-				<!-- ========================================= Conteúdo do produto ========================================= -->
-				
-				
-				
-				<div id="conteudoproduto">
+                    <div id="linkextra">
+                        <a href="index.php?aleatorios=">
+                            <p>
+                                MAIS OPÇÕES
+                            </p>
+                        </a>
+                    </div>
                     
-                    <?php
-					
-                        $sql = "select * from tblProdutos";
+                </nav>
 
-                        $select = mysql_query($sql);
+                <!-- ========================================= Conteúdo do produto ========================================= -->
+
+                <div id="conteudoproduto">
+
+                    <?php
+
+                        $sql_produtos = "select * from tblprodutos order by rand() limit 6";
+                        
+                        if(isset($_GET['categoria'])){
+                            $sql_produtos = "select p.idProdutos,
+                            p.nome,
+                            p.descricao,
+                            p.preco,
+                            p.imagem from tblprodutos as p inner join tblsubcat as s
+                            on p.idsubcat = s.idsubcat
+                            inner join tblcategorias as c
+                            on s.idcategoria = c.idcategoria where c.idcategoria=".$_GET['categoria']."order by rand() limit 6";
+                        }
                     
-                        while($rsconsulta = mysql_fetch_array($select)){
+                        if(isset($_GET['subcategoria'])){
+                            $sql_produtos = "select idProduto,
+                            nome,
+                            descricao,
+                            preco,
+                            imagem,
+                            idSubCat
+                            from tblprodutos where idSubCat =".$_GET['subcategoria'];
+                        }
+                    
+                        if(isset($_GET['aleatorios'])){
+                             $sql_produtos = "select * from tblprodutos order by rand() limit 6";
+                        }
+
+                        $pesquisar = $_POST['txtPesquisar'];
+                        
+                        if(isset($_GET['pesquisar'])){
+                            $sql_produtos = "select * from tblproduto   where nome like '%$pesquisar%'";
+                        }
+                    
+                        $select = mysql_query($sql_produtos);
+                        
+                        //echo($sql_produtos);
+                        
+                        while($rsprodutos = mysql_fetch_array($select)){
 
                     ?>
-                    
-					<div class="produto">
-						<div class="imagemproduto">
-							<img class="hamburguer" src="CMS/<?php echo($rsconsulta['imagem']); ?>" alt="">
-						</div>
-						<div class="infproduto">
-							<div class="informacoesproduto">
-								<p class="nome">
-									<?php echo($rsconsulta['nome']); ?>
-								</p>
-								<p>
-									<?php echo($rsconsulta['descricao']); ?>
-								</p>
-								<p>
-									R$ <?php echo($rsconsulta['preco']); ?>
-								</p>
-							</div>
-							<!--<div class="detalhes">
-								<a href="" title="Veja mais informações"> Detalhes </a>
-							</div>-->
-						</div>
-                        
+
+                    <div class="produto">
+                        <div class="imagemproduto">
+                            <img class="hamburguer" src="CMS/<?php echo($rsprodutos['imagem']); ?>" alt="">
+                        </div>
+                        <div class="infproduto">
+                            <div id="nome">
+                                <p>
+                                    <?php echo($rsprodutos['nome']); ?>
+                                </p>
+                            </div>
+                            <div class="informacoesproduto">
+                                <p>
+                                    <?php echo($rsprodutos['descricao']); ?>
+                                </p>
+                                <p>
+                                    R$ <?php echo($rsprodutos['preco']); ?>
+                                </p>
+                            </div>
+                            <!--<div class="detalhes">
+                                <a href="" title="Veja mais informações"> Detalhes </a>
+                            </div>-->
+                        </div>
+
                         <?php
-						  }
-					   ?>
-                        
-					</div>
-				</div>
+                          }
+                       ?>
+
+                    </div>
+                </div>
 			</section>
 			<!-- ========================================= Rodapé ========================================= -->
-			<footer>
-				<p class="p">
-					Honker Burguer©2017. Todos os Direitos Reservados.
-				</p>
-				<p class="p">
-					Endereço: Av.Bluffington - n°666 - SP
-				</p>
-				<p class="p">
-					CEP:0767-410
-				</p>
-			</footer>
+			<?php include('rodape.php'); ?>
 		</div>
 	
 		<!-- ========================================= Script para o slider ========================================= -->

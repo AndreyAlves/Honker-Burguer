@@ -268,7 +268,7 @@ if(isset($_GET['modo'])){
 							<tr class="tblconsulta_tr">
 								<td rowspan="1"><?php echo($rsconsulta['nome']); ?></td>
 								<td rowspan="1"><?php echo($rsconsulta['descricao']); ?></td>
-								<td rowspan="1"><?php echo($rsconsulta['preco']); ?></td>
+								<td rowspan="1">R$<?php echo($rsconsulta['preco']); ?></td>
 								<td rowspan="1"><img class="imagem_consulta" src="<?php echo($rsconsulta['imagem']);?>"/> </td>
                                 <td rowspan="1"><?php echo($rsconsulta['subcat']); ?></td>
                                 <td rowspan="1"><?php echo($rsconsulta['categoria']); ?></td>

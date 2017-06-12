@@ -37,8 +37,8 @@
 			
 			<?php
 			
-				$sql = "select * from tblbanda where status = 1";
-				$select = mysql_query($sql);
+				$sql_banda = "select * from tblbanda where status = 1";
+				$select = mysql_query($sql_banda);
 				
 				while($rsconsulta = mysql_fetch_array($select)){
 				
@@ -87,7 +87,7 @@
 								<p>
 									<?php echo($rsconsulta['texto1']); ?>
 								</p>
-							<div>
+							</div>
 						</div>
 					</div>
 					<div id="conteudoinformacoes">
@@ -120,7 +120,7 @@
 								</div>
                             </div>
                         </div>
-					
+                    </div>
 				<?php
 					
 					}
@@ -132,17 +132,7 @@
 		<!--</form> -->
 			<!-- ========================================= Rodapé ========================================= -->
 			
-			<footer>
-				<p class="p">
-					Honker Burguer©2017. Todos os Direitos Reservados.
-				</p>
-				<p class="p">
-					Endereço: Av.Bluffington - n°666 - SP
-				</p>
-				<p class="p">
-					CEP:0767-410
-				</p>
-			</footer>
+			<?php include('rodape.php'); ?>
 		</div>
 		<!-- ========================================= Script para o slider ========================================= -->
 		<script>

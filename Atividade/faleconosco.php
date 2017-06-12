@@ -47,64 +47,9 @@ if(isset($_POST['btnsalvar'])){
 		<div id="principal">
 			<!-- ========================================= Cabeçalho ========================================= -->
 			<header>
-				<div id="caixaoculta">
-					<div id="conteudoheader">
-						<div id="logo">
-							<ul id="linksl">
-								<li>
-									<a href="home.php" title="HONKER BURGUER" style="text-decoration:none"> <img id="logoimg" src="Imagens/logoprincipal.jpg" alt=""/> </a>	
-								</li>
-							</ul>
-						</div>
-						<!-- ========================================= Menu Principal ========================================= -->
-						<div>
-							<nav id="menuprincipal">
-								<ul id="links">
-									<li>
-										<a href="banda.php" title="Banda"> Banda </a>
-									</li>
-									<li>
-										<a href="sobre.php" title="Sobre"> Sobre </a>
-									</li>
-									<li>
-										<a href="promocoes.php" title="Promoções"> Promoções </a>
-									</li>
-									<li>
-										<a href="ambientes.php" title="Nossos Ambientes"> Nossos Ambientes </a>
-									</li>
-									<li>
-										<a href="lanchedomes.php" title="Lanche do mês"> Lanche do mês </a>
-									</li>
-									<li>
-										<a href="faleconosco.php" title="Fale Conosco"> Fale Conosco </a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<!-- ========================================= Autenticação ========================================= -->
-						<!-- <form name="frmprojeto" method="post" action="home.php">
-							<div id="autenticacao">
-								<div id="itensautenticacao">
-									<div class="usuariosenha" >
-										Usuário:
-									</div>
-									<div>
-										<input class="input" value="<?php echo($login); ?>" name="txtUsuario" type="text">
-									</div>
-									<div class="usuariosenha">
-										Senha:
-									</div>
-									<div>
-										<input class="input" value="<?php echo($senha); ?>" name="txtSenha" type="text">
-									</div>
-									<div id="btnlogar">
-										<input name="btnLogar" value="<?php echo($logar); ?>" type="submit"/>
-									</div>
-								</div>
-							</div>
-						</form> -->
-					</div>
-				</div>
+				<?php
+                    include('menu.php');
+                ?>
 			</header>
 			<!-- ========================================= Conteúdo ========================================= -->
 			<section>
@@ -175,26 +120,14 @@ if(isset($_POST['btnsalvar'])){
 						</form>
 					</div>
 				</div>   
-				<!-- <div id="sliderlanchedomes">
-					<img class="slides" src="Imagens/slider1.jpg">
-					<img class="slides" src="Imagens/slider2.jpg">
-					<button class = "button" onClick = "plusIndex(-1)" id = "btn1">&#10094;</button>
-					<button class = "button" onClick = "plusIndex(1)" id = "btn2">&#10095;</button>
-				</div>-->
 			</section>
 			<!-- ========================================= Rodapé ========================================= -->
 			
-			<footer>
-				<p class="p">
-					Honker Burguer©2017. Todos os Direitos Reservados.
-				</p>
-				<p class="p">
-					Endereço: Av.Bluffington - n°666 - SP
-				</p>
-				<p class="p">
-					CEP:0767-410
-				</p>
-			</footer>
+			<header>
+				<?php
+                    include('rodape.php');
+                ?>
+			</header>
 		</div>
 		<!-- ========================================= Script Validação ========================================= -->
 		
