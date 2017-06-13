@@ -36,11 +36,12 @@
 
                 <?php include('slider.php'); ?>
 
+                <!-- ========================================= Pesquisa========================================= -->
                 <form name="frmBusca" method="post" action="index.php">
-                    <!-- ========================================= Pesquisa========================================= -->
+                    
                     <div id="pesquisa">
-                        <input id="pesquisa_input" type="text" placeholder="Pesquise aqui o lanche desejado" name="txtPesquisar">
-                        <input id="pesquisa_botao" type="submit" value="" name="pesquisar">
+                        <input id="pesquisa_input" type="text" placeholder="Pesquise aqui o produto desejado" name="txtPesquisar">
+                        <input id="pesquisa_botao" type="submit" value="" name="pesquisar" value="Enviar">
                             <!--<img id="icone_busca" src="icones/busca.png"/>
                         </div>-->
                     </div>
@@ -149,10 +150,10 @@
                              $sql_produtos = "select * from tblprodutos order by rand() limit 6";
                         }
 
-                        $pesquisar = $_POST['txtPesquisar'];
                         
-                        if(isset($_GET['pesquisar'])){
-                            $sql_produtos = "select * from tblproduto   where nome like '%$pesquisar%'";
+                        if(isset($_POST['pesquisar'])){
+                            $pesquisar = $_POST['txtPesquisar'];
+                            $sql_produtos = "select * from tblprodutos where nome like '%$pesquisar%'";
                         }
                     
                         $select = mysql_query($sql_produtos);
@@ -185,13 +186,15 @@
                                 <a href="" title="Veja mais informações"> Detalhes </a>
                             </div>-->
                         </div>
-
-                        <?php
+					</div>
+					
+					<?php
                           }
                        ?>
-
-                    </div>
-                </div>
+					
+				</div>
+				
+				
 			</section>
 			<!-- ========================================= Rodapé ========================================= -->
 			<?php include('rodape.php'); ?>

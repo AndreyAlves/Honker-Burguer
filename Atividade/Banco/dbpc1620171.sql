@@ -123,7 +123,7 @@ CREATE TABLE `tblcategorias` (
 
 LOCK TABLES `tblcategorias` WRITE;
 /*!40000 ALTER TABLE `tblcategorias` DISABLE KEYS */;
-INSERT INTO `tblcategorias` VALUES (2,'Natural´s Burguer'),(3,'Monster Burguer'),(4,'Black Dog'),(5,'Shakes'),(11,'Daiane7');
+INSERT INTO `tblcategorias` VALUES (2,'Natural´s Burguer'),(3,'Monster Burguer'),(4,'Black Dog'),(5,'Shakes');
 /*!40000 ALTER TABLE `tblcategorias` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -288,7 +288,7 @@ CREATE TABLE `tblprodutos` (
   PRIMARY KEY (`idProduto`),
   KEY `idSubCat_idx` (`idSubCat`),
   CONSTRAINT `idSubCat` FOREIGN KEY (`idSubCat`) REFERENCES `tblsubcat` (`idSubCat`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -297,7 +297,7 @@ CREATE TABLE `tblprodutos` (
 
 LOCK TABLES `tblprodutos` WRITE;
 /*!40000 ALTER TABLE `tblprodutos` DISABLE KEYS */;
-INSERT INTO `tblprodutos` VALUES (1,'HONKER FLAVOR','PÃ£o com pedaÃ§os de gergilim saborosos, com dois andares de hambÃºrgueres, entre eles duas fatias de queijo cheddar derretido, alface fresca, trÃªs rodÃ©las de tomate e nosso molho especial.',13.99,'arquivos/honkerflavor.jpg',24),(2,'HONKER COMBINED','PÃ£o feito com massa da melhor qualidade com pedaÃ§os de gergilim com um delicioso\r\n										hambÃºrguer grelhado, muito cheddar derretido, alface fresca e um\r\n										saboroso molho especial. Acompanhado com nossas batatas fritas especiais e um refrigerante\r\n										Ã  sua escolha.',19.99,'arquivos/honkercombined.jpg',21);
+INSERT INTO `tblprodutos` VALUES (1,'HONKER FLAVOR','PÃ£o com pedaÃ§os de gergilim saborosos, com dois andares de hambÃºrgueres, entre eles duas fatias de queijo cheddar derretido, alface fresca, trÃªs rodÃ©las de tomate e nosso molho especial.',13.99,'arquivos/honkerflavor.jpg',24),(2,'HONKER COMBINED','PÃ£o feito com massa da melhor qualidade com pedaÃ§os de gergilim com um delicioso\r\n										hambÃºrguer grelhado, muito cheddar derretido, alface fresca e um\r\n										saboroso molho especial. Acompanhado com nossas batatas fritas especiais e um refrigerante\r\n										Ã  sua escolha.',19.99,'arquivos/honkercombined.jpg',21),(4,'Teste','tdafa',2,'arquivos/fundo2.jpg',18);
 /*!40000 ALTER TABLE `tblprodutos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -384,7 +384,7 @@ CREATE TABLE `tblsubcat` (
 
 LOCK TABLES `tblsubcat` WRITE;
 /*!40000 ALTER TABLE `tblsubcat` DISABLE KEYS */;
-INSERT INTO `tblsubcat` VALUES (15,NULL,'Lanche Integral'),(16,2,'Lanche Integral'),(18,2,'Lanches Verdes'),(19,2,'Lanches Light'),(20,2,'Lanches Fitness'),(21,3,'Lanches no Prato'),(22,3,'Lanches 1K'),(23,3,'Gordinhos Burguer'),(24,3,'All the Burguer'),(25,4,'Dogs no Prato'),(26,4,'Dogão especial'),(27,4,'Dogs Simples'),(28,4,'Double Dogs'),(29,11,'Baixinha'),(30,5,'Shakes especial'),(31,5,'Shakes simples'),(32,5,'Double Shakes');
+INSERT INTO `tblsubcat` VALUES (15,NULL,'Lanche Integral'),(16,2,'Lanche Integral'),(18,2,'Lanches Verdes'),(19,2,'Lanches Light'),(20,2,'Lanches Fitness'),(21,3,'Lanches no Prato'),(22,3,'Lanches 1K'),(23,3,'Gordinhos Burguer'),(24,3,'All the Burguer'),(25,4,'Dogs no Prato'),(26,4,'Dogão especial'),(27,4,'Dogs Simples'),(28,4,'Double Dogs'),(30,5,'Shakes especial'),(31,5,'Shakes simples'),(32,5,'Double Shakes');
 /*!40000 ALTER TABLE `tblsubcat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -653,4 +653,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-09 16:12:25
+-- Dump completed on 2017-06-12 15:19:57

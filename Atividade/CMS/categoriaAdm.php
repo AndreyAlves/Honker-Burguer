@@ -12,7 +12,7 @@ if(isset($_POST["btnSalvar"])){
 	
 	if($_POST['btnSalvar'] == 'Salvar'){
 	
-		$sql = "insert into tblCategorias(categoria) values('".$categoria."')";
+		$sql = "insert into tblcategorias(categoria) values('".$categoria."')";
 		mysql_query($sql);
 		header('location:categoriaAdm.php');
 	
@@ -20,7 +20,7 @@ if(isset($_POST["btnSalvar"])){
 		
 	}else if($_POST['btnSalvar']=='Alterar'){
 		
-		$sql="update tblCategorias set categoria='".$categoria."' where idCategoria =".$_SESSION['codigo'];                         
+		$sql="update tblcategorias set categoria='".$categoria."' where idCategoria =".$_SESSION['codigo'];                         
 		
 		mysql_query($sql);
 	
@@ -38,7 +38,7 @@ if(isset($_GET['modo'])){
 	if($_GET['modo']=='excluir'){
 
 		$idCategoria = $_GET['codigo'];
-		$sql="delete from tblCategorias where idCategoria=".$idCategoria;
+		$sql="delete from tblcategorias where idCategoria=".$idCategoria;
 		mysql_query($sql); 
 		
 		header('location:categoriaAdm.php');
@@ -47,7 +47,7 @@ if(isset($_GET['modo'])){
 		
 		$idCategoria = $_GET['codigo'];
 		$_SESSION['codigo']=$idCategoria;
-		$sql = "select * from tblCategorias where idCategoria=".$idCategoria;
+		$sql = "select * from tblcategorias where idCategoria=".$idCategoria;
 		
 		$select = mysql_query($sql);
 	
@@ -56,27 +56,6 @@ if(isset($_GET['modo'])){
 
 			$botao="Alterar";
 		}
-	
-	
-	
-		//mysql_query($sql); 
-			
-		//header('location:sobreAdm.php');
-		
-		//echo($sql);
-		
-	}else if($_GET['modo'] == 'status'){
-		
-		$idSobre = $_GET['codigo'];
-		$sql = "update tblSobre set status = 0";
-		
-		mysql_query($sql);
-		header('location:sobreAdm.php');
-		
-		$sql ="update tblSobre set status = 1 where idSobre =".$idSobre;
-		
-		mysql_query($sql);
-		header('location:sobreAdm.php');
 		
 	}
 }	
@@ -145,7 +124,7 @@ if(isset($_GET['modo'])){
 							</tr>
 							<?php
 								
-								$sql = "select * from tblCategorias";
+								$sql = "select * from tblcategorias";
 
 								$select = mysql_query($sql);
 								

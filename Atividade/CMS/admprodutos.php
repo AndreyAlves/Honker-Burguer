@@ -29,7 +29,7 @@ if(isset($_POST["btnSalvar"])){
 		
 			if(move_uploaded_file($_FILES['flefotos']['tmp_name'], $uploadfile)){
 				
-				$sql = "insert into tblProdutos(nome, descricao, preco, imagem, idSubCat) values('".$nome."','".$descricao."','".$preco."','".$uploadfile."','".$subcategoria."')";
+				$sql = "insert into tblprodutos(nome, descricao, preco, imagem, idSubCat) values('".$nome."','".$descricao."','".$preco."','".$uploadfile."','".$subcategoria."')";
 				
 				mysql_query($sql);				
 				header('location:admprodutos.php');
@@ -46,7 +46,7 @@ if(isset($_POST["btnSalvar"])){
 
 			if(move_uploaded_file($_FILES['flefotos']['tmp_name'], $uploadfile)){
 		
-				$sql="update tblProdutos set nome='".$nome."',descricao='".$descricao."',preco='".$preco."', imagem='".$uploadfile."' where idProduto =".$_SESSION['codigo'];                         
+				$sql="update tblprodutos set nome='".$nome."',descricao='".$descricao."',preco='".$preco."', imagem='".$uploadfile."' where idProduto =".$_SESSION['codigo'];                         
 				
 				mysql_query($sql);
 			
@@ -80,7 +80,7 @@ if(isset($_GET['modo'])){
 	if($_GET['modo']=='excluir'){
 
 		$idProduto = $_GET['codigo'];
-		$sql="delete from tblProdutos where idProduto=".$idProduto;
+		$sql="delete from tblprodutos where idProduto=".$idProduto;
         mysql_query($sql); 
 		header('location:admprodutos.php');
 		
@@ -88,7 +88,7 @@ if(isset($_GET['modo'])){
 		
 		$idProduto = $_GET['codigo'];
 		$_SESSION['codigo']=$idProduto;
-		$sql = "select * from tblProdutos where idProduto=".$idProduto;
+		$sql = "select * from tblprodutos where idProduto=".$idProduto;
 		
 		$select = mysql_query($sql);
 	
@@ -104,12 +104,12 @@ if(isset($_GET['modo'])){
 	}else if($_GET['modo'] == 'status'){
 		
 		$idSobre = $_GET['codigo'];
-		$sql = "update tblSobre set status = 0";
+		$sql = "update tblsobre set status = 0";
 		
 		mysql_query($sql);
 		header('location:sobreAdm.php');
 		
-		$sql ="update tblSobre set status = 1 where idSobre =".$idSobre;
+		$sql ="update tblsobre set status = 1 where idSobre =".$idSobre;
 		
 		mysql_query($sql);
 		header('location:sobreAdm.php');
@@ -206,7 +206,7 @@ if(isset($_GET['modo'])){
 							<select class="caixadetexto" name="optsubcategoria">
 								<?php
 
-									$sql = "select * from tblSubCat";
+									$sql = "select * from tblsubcat";
 
 									$select=mysql_query($sql);
 
@@ -250,13 +250,13 @@ if(isset($_GET['modo'])){
 							</tr>
 							<?php
 								
-								$sql = "select * from tblProdutos as p
+								$sql = "select * from tblprodutos as p
                                                     inner join
-                                                    tblSubCat as sc
+                                                    tblsubcat as sc
                                                     on p.idSubCat = sc.idSubCat
                                                     
                                                     inner join 
-                                                    tblCategorias as c
+                                                    tblcategorias as c
                                                     on sc.idCategoria = c.idCategoria
                                                     ";
 

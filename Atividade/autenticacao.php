@@ -4,7 +4,7 @@ if(isset($_POST['txtUsuario']) && isset($_POST['txtSenha'])){
 	$login = $_POST['txtUsuario'];
 	$senha = $_POST['txtSenha'];
 	
-	$sql = "select * from tblLogin where login = '$login'and senha = '$senha'";
+	$sql = "select * from tbllogin where login = '$login'and senha = '$senha'";
 	
 	$select = mysql_query($sql);
 

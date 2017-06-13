@@ -14,21 +14,24 @@ if(isset($_POST["btnSalvar"])){
 		$subcat = $_POST['txtSubCat'];
 		$categoria = $_POST['optcategoria'];
 	
-		$sql = "insert into tblSubCat(idCategoria, subcat) values('".$categoria."','".$subcat."')";
+		$sql = "insert into tblsubcat(idCategoria, subcat) values('".$categoria."','".$subcat."')";
 		mysql_query($sql);
 		header('location:subcategoriaAdm.php');
 	
 		//echo($sql);
 		
 	}else if($_POST['btnSalvar']=='Alterar'){
+	
+		$subcat = $_POST['txtSubCat'];
+		$categoria = $_POST['optcategoria'];
 		
-		$sql="update tblSubCat set subcat='".$subcat."' where idSubCat =".$_SESSION['codigo'];                         
+		$sql_update="update tblsubcat set subcat='".$subcat."', idCategoria='".$categoria."' where idSubCat =".$_SESSION['codigo'];                         
 		
-		mysql_query($sql);
+		mysql_query($sql_update);
 	
 		header('location:subcategoriaAdm.php');
         
-		//echo($sql);
+		//echo($sql_update);
 		
 	}
 }
@@ -40,7 +43,7 @@ if(isset($_GET['modo'])){
 	if($_GET['modo']=='excluir'){
 
 		$idSubCat = $_GET['codigo'];
-		$sql="delete from tblSubCat where idSubCat=".$idSubCat;
+		$sql="delete from tblsubcat where idSubCat=".$idSubCat;
 		mysql_query($sql); 
 		
 		header('location:subcategoriaAdm.php');
@@ -49,34 +52,16 @@ if(isset($_GET['modo'])){
 		
 		$idSubCat = $_GET['codigo'];
 		$_SESSION['codigo']=$idSubCat;
-		$sql = "select * from tblSubCat where idSubCat=".$idSubCat;
+		$sql = "select * from tblsubcat where idSubCat=".$idSubCat;
 		
 		$select = mysql_query($sql);
 	
 		if($rsconsulta=mysql_fetch_array($select)){
-			$subcategoria=$rsconsulta['subcat'];
+			$subcat=$rsconsulta['subcat'];
+			$categoria=$rsconsulta['optcategoria'];
 
 			$botao="Alterar";
 		}
-		
-		//mysql_query($sql); 
-			
-		//header('location:sobreAdm.php');
-		
-		//echo($sql);
-		
-	}else if($_GET['modo'] == 'status'){
-		
-		$idSobre = $_GET['codigo'];
-		$sql = "update tblSobre set status = 0";
-		
-		mysql_query($sql);
-		header('location:sobreAdm.php');
-		
-		$sql ="update tblSobre set status = 1 where idSobre =".$idSobre;
-		
-		mysql_query($sql);
-		header('location:sobreAdm.php');
 		
 	}
 }	
@@ -135,7 +120,7 @@ if(isset($_GET['modo'])){
 							<select class="inputBanda" name="optcategoria">
 								<?php
 								
-									$sql = "select * from tblCategorias";
+									$sql = "select * from tblcategorias";
 									
 									$select=mysql_query($sql);
 					
@@ -175,9 +160,9 @@ if(isset($_GET['modo'])){
 							</tr>
 							<?php
 								
-								$sql = "select * from tblSubCat as s
+								$sql = "select * from tblsubcat as s
 												inner join
-												tblCategorias as c
+												tblcategorias as c
 												on s.idCategoria = c.idCategoria";
 
 								$select = mysql_query($sql);

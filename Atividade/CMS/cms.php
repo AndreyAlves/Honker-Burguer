@@ -36,8 +36,10 @@
 					</div>
 				</div>
 			</header>
+        
 			<!-- ========================================= Menu ========================================= -->
 			<?php include('menuAdm.php'); ?>
+        </div>
 			<!-- ========================================= Conteúdo ========================================= -->
 			<section id="sectionsaudacoes">
 				<div id="conteudosectionsaudacoes">
@@ -81,6 +83,6 @@
 					setTimeout(autoSlide,1000);
 				}
 			</script>
-        </div>
+        
 	</body>
 </html>
