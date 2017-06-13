@@ -1,0 +1,398 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.35-0+wheezy1
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema dbpc1620171
+--
+
+CREATE DATABASE IF NOT EXISTS dbpc1620171;
+USE dbpc1620171;
+
+--
+-- Definition of table `tblambientes`
+--
+
+DROP TABLE IF EXISTS `tblambientes`;
+CREATE TABLE `tblambientes` (
+  `idAmbientes` int(11) NOT NULL AUTO_INCREMENT,
+  `imagem` varchar(100) DEFAULT NULL,
+  `endereco` text,
+  `ambiente` varchar(100) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idAmbientes`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblambientes`
+--
+
+/*!40000 ALTER TABLE `tblambientes` DISABLE KEYS */;
+INSERT INTO `tblambientes` (`idAmbientes`,`imagem`,`endereco`,`ambiente`,`status`) VALUES 
+ (4,'arquivos/carro2.jpg','HONKER BURGUER - BARUERI\r\n\r\nENDEREÃ‡O: Av.Bluffington - nÂ°666 - SP\r\n\r\nCEP:0767-410','arquivos/honker2.jpg',1),
+ (5,'arquivos/carro5.jpg','TEEEESTE','arquivos/carro4.jpg',1),
+ (6,'arquivos/fundo2.jpg','TESTESTESTETSTET','arquivos/fundo2.jpg',1);
+/*!40000 ALTER TABLE `tblambientes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblbanda`
+--
+
+DROP TABLE IF EXISTS `tblbanda`;
+CREATE TABLE `tblbanda` (
+  `idBanda` int(11) NOT NULL AUTO_INCREMENT,
+  `imagem` varchar(45) DEFAULT NULL,
+  `texto1` text,
+  `titulo1` varchar(45) DEFAULT NULL,
+  `titulo2` varchar(45) DEFAULT NULL,
+  `nome` varchar(45) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idBanda`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblbanda`
+--
+
+/*!40000 ALTER TABLE `tblbanda` DISABLE KEYS */;
+INSERT INTO `tblbanda` (`idBanda`,`imagem`,`texto1`,`titulo1`,`titulo2`,`nome`,`status`) VALUES 
+ (25,'arquivos/imgN.jpg','Nirvana Ã© o nome de uma banda de rock, criada em Aberdeen (estado de Washington), Estados Unidos, tendo como principal vocalista \r\n									e guitarrista o lendÃ¡rio Kurt Cobain. Foi uma banda de bastante sucesso nas dÃ©cadas 80 e 90 do sÃ©culo XX. A banda foi extinta com \r\n									o suicÃ­dio do seu lÃ­der Kurt Cobain, em 1994. ApÃ³s sua morte vÃ¡rios discos foram lanÃ§ados, perpetuando o sucesso da banda entre os fÃ£s.\r\n									Em 2004, Grohl e Novoselic apareceram em cena para apoiar a candidatura de John Kerry Ã  presidÃªncia dos Estados Unidos.Em 12 de dezembro de 2012, Dave\r\n									e Krist, com a participaÃ§Ã£o de Pat Smear, se apresentam em um show beneficente pelas vÃ­timas do furacÃ£o Sandy, no Madison Square Garden, em Nova Iorque. Esta apresentaÃ§Ã£o contou com os\r\n									vocais do ex-beatle Paul McCartney.','SOBRE','INTEGRANTES','Nirvana',1);
+/*!40000 ALTER TABLE `tblbanda` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblcadastro`
+--
+
+DROP TABLE IF EXISTS `tblcadastro`;
+CREATE TABLE `tblcadastro` (
+  `idFaleconosco` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) NOT NULL,
+  `telefone` varchar(45) DEFAULT NULL,
+  `celular` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `profissao` varchar(100) NOT NULL,
+  `obs` text,
+  PRIMARY KEY (`idFaleconosco`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblcadastro`
+--
+
+/*!40000 ALTER TABLE `tblcadastro` DISABLE KEYS */;
+INSERT INTO `tblcadastro` (`idFaleconosco`,`nome`,`telefone`,`celular`,`email`,`sexo`,`profissao`,`obs`) VALUES 
+ (1,'Andrey','011 4002-8922','011 94002-8922','andrey@gmail.com','M','Programadorzão','D+');
+/*!40000 ALTER TABLE `tblcadastro` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblcategorias`
+--
+
+DROP TABLE IF EXISTS `tblcategorias`;
+CREATE TABLE `tblcategorias` (
+  `idCategoria` int(11) NOT NULL AUTO_INCREMENT,
+  `categoria` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idCategoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblcategorias`
+--
+
+/*!40000 ALTER TABLE `tblcategorias` DISABLE KEYS */;
+INSERT INTO `tblcategorias` (`idCategoria`,`categoria`) VALUES 
+ (2,'Naturalï¿½s Burguer'),
+ (3,'Monster Burguer'),
+ (4,'Black Dog'),
+ (5,'Shakes'),
+ (14,'lanches marcel 123');
+/*!40000 ALTER TABLE `tblcategorias` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblintegrantes`
+--
+
+DROP TABLE IF EXISTS `tblintegrantes`;
+CREATE TABLE `tblintegrantes` (
+  `integrante` varchar(45) DEFAULT NULL,
+  `funcao` varchar(45) DEFAULT NULL,
+  `idintegrante` int(11) NOT NULL AUTO_INCREMENT,
+  `idBanda` int(11) DEFAULT NULL,
+  `statusIntegrante` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idintegrante`),
+  KEY `idBanda` (`idBanda`),
+  CONSTRAINT `idBanda` FOREIGN KEY (`idBanda`) REFERENCES `tblbanda` (`idBanda`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblintegrantes`
+--
+
+/*!40000 ALTER TABLE `tblintegrantes` DISABLE KEYS */;
+INSERT INTO `tblintegrantes` (`integrante`,`funcao`,`idintegrante`,`idBanda`,`statusIntegrante`) VALUES 
+ ('Dave Grohl','Bateria. 1990 - 1994',14,25,1),
+ ('Krist Novoselic','Baixista. 1987 - 1994',15,25,1),
+ ('Chad Channing','Bateria. 1988 - 1990',19,25,1);
+/*!40000 ALTER TABLE `tblintegrantes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tbllanchedomes`
+--
+
+DROP TABLE IF EXISTS `tbllanchedomes`;
+CREATE TABLE `tbllanchedomes` (
+  `idLanchedomes` int(11) NOT NULL AUTO_INCREMENT,
+  `idProduto` int(11) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idLanchedomes`),
+  KEY `idProduto_idx` (`idProduto`),
+  CONSTRAINT `fk_produtos` FOREIGN KEY (`idProduto`) REFERENCES `tblprodutos` (`idProduto`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbllanchedomes`
+--
+
+/*!40000 ALTER TABLE `tbllanchedomes` DISABLE KEYS */;
+INSERT INTO `tbllanchedomes` (`idLanchedomes`,`idProduto`,`status`) VALUES 
+ (1,2,1);
+/*!40000 ALTER TABLE `tbllanchedomes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tbllogin`
+--
+
+DROP TABLE IF EXISTS `tbllogin`;
+CREATE TABLE `tbllogin` (
+  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) DEFAULT NULL,
+  `login` varchar(45) DEFAULT NULL,
+  `senha` varchar(45) DEFAULT NULL,
+  `idNivel` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idUsuario`),
+  KEY `idNivel_idx` (`idNivel`),
+  CONSTRAINT `idNivel` FOREIGN KEY (`idNivel`) REFERENCES `tblnivel` (`idNivel`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbllogin`
+--
+
+/*!40000 ALTER TABLE `tbllogin` DISABLE KEYS */;
+INSERT INTO `tbllogin` (`idUsuario`,`nome`,`login`,`senha`,`idNivel`) VALUES 
+ (50,'Andrey','andrey','123',1),
+ (56,'Bia comilona','marmita','123',3),
+ (57,'TESTE','teste','123',2);
+/*!40000 ALTER TABLE `tbllogin` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblnivel`
+--
+
+DROP TABLE IF EXISTS `tblnivel`;
+CREATE TABLE `tblnivel` (
+  `idNivel` int(11) NOT NULL AUTO_INCREMENT,
+  `nivel` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idNivel`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblnivel`
+--
+
+/*!40000 ALTER TABLE `tblnivel` DISABLE KEYS */;
+INSERT INTO `tblnivel` (`idNivel`,`nivel`) VALUES 
+ (1,'Administrador'),
+ (2,'Cataloguista'),
+ (3,'Operador Basico');
+/*!40000 ALTER TABLE `tblnivel` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblnutricional`
+--
+
+DROP TABLE IF EXISTS `tblnutricional`;
+CREATE TABLE `tblnutricional` (
+  `idNutricional` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  `calorias` float DEFAULT NULL,
+  `proteinas` float DEFAULT NULL,
+  `carboidratos` float DEFAULT NULL,
+  `gordura` float DEFAULT NULL,
+  `gorduras` float DEFAULT NULL,
+  `gordurat` float DEFAULT NULL,
+  `sodio` float DEFAULT NULL,
+  `idProduto` int(11) DEFAULT NULL,
+  `statusNutricional` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idNutricional`),
+  KEY `idProduto_idx` (`idProduto`),
+  CONSTRAINT `fk_produto` FOREIGN KEY (`idProduto`) REFERENCES `tblprodutos` (`idProduto`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblnutricional`
+--
+
+/*!40000 ALTER TABLE `tblnutricional` DISABLE KEYS */;
+INSERT INTO `tblnutricional` (`idNutricional`,`nome`,`calorias`,`proteinas`,`carboidratos`,`gordura`,`gorduras`,`gordurat`,`sodio`,`idProduto`,`statusNutricional`) VALUES 
+ (1,NULL,10,10,10,10,10,10,10,1,1);
+/*!40000 ALTER TABLE `tblnutricional` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblprodutos`
+--
+
+DROP TABLE IF EXISTS `tblprodutos`;
+CREATE TABLE `tblprodutos` (
+  `idProduto` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) DEFAULT NULL,
+  `descricao` text,
+  `preco` float DEFAULT NULL,
+  `imagem` varchar(100) DEFAULT NULL,
+  `idSubCat` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idProduto`),
+  KEY `idSubCat_idx` (`idSubCat`),
+  CONSTRAINT `idSubCat` FOREIGN KEY (`idSubCat`) REFERENCES `tblsubcat` (`idSubCat`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblprodutos`
+--
+
+/*!40000 ALTER TABLE `tblprodutos` DISABLE KEYS */;
+INSERT INTO `tblprodutos` (`idProduto`,`nome`,`descricao`,`preco`,`imagem`,`idSubCat`) VALUES 
+ (1,'HONKER FLAVOR','PÃ£o com pedaÃ§os de gergilim saborosos, com dois andares de hambÃºrgueres, entre eles duas fatias de queijo cheddar derretido, alface fresca, trÃªs rodÃ©las de tomate e nosso molho especial.',13.99,'arquivos/honkerflavor.jpg',24),
+ (2,'HONKER COMBINED','PÃ£o feito com massa da melhor qualidade com pedaÃ§os de gergilim com um delicioso\r\n										hambÃºrguer grelhado, muito cheddar derretido, alface fresca e um\r\n										saboroso molho especial. Acompanhado com nossas batatas fritas especiais e um refrigerante\r\n										Ã  sua escolha.',19.99,'arquivos/honkercombined.jpg',21),
+ (5,'dsad','dasdsa',30,'arquivos/logoI.png',16),
+ (6,'corrida marcel 1','fdgdfg fdg fdg',1,'arquivos/Koala.jpg',43);
+/*!40000 ALTER TABLE `tblprodutos` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblpromocoes`
+--
+
+DROP TABLE IF EXISTS `tblpromocoes`;
+CREATE TABLE `tblpromocoes` (
+  `idPromocoes` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` text,
+  `desconto` varchar(50) DEFAULT NULL,
+  `idProduto` int(11) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idPromocoes`),
+  KEY `idProduto_idx` (`idProduto`),
+  CONSTRAINT `idProduto` FOREIGN KEY (`idProduto`) REFERENCES `tblprodutos` (`idProduto`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblpromocoes`
+--
+
+/*!40000 ALTER TABLE `tblpromocoes` DISABLE KEYS */;
+INSERT INTO `tblpromocoes` (`idPromocoes`,`titulo`,`desconto`,`idProduto`,`status`) VALUES 
+ (1,'PROMOÃ‡ÃƒO DO DIA DOS NAMORADOS','20%',1,1);
+/*!40000 ALTER TABLE `tblpromocoes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblsobre`
+--
+
+DROP TABLE IF EXISTS `tblsobre`;
+CREATE TABLE `tblsobre` (
+  `idSobre` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo1` varchar(45) DEFAULT NULL,
+  `texto1` text,
+  `titulo2` varchar(45) DEFAULT NULL,
+  `texto2` text,
+  `imagem1` varchar(100) DEFAULT NULL,
+  `imagem2` varchar(100) DEFAULT NULL,
+  `imagem3` varchar(100) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`idSobre`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblsobre`
+--
+
+/*!40000 ALTER TABLE `tblsobre` DISABLE KEYS */;
+INSERT INTO `tblsobre` (`idSobre`,`titulo1`,`texto1`,`titulo2`,`texto2`,`imagem1`,`imagem2`,`imagem3`,`status`) VALUES 
+ (9,'HISTï¿½RIA DA EMPRESA','A empresa comeÃ§ou em 1953 com o nome Honker Burguer, uma cadeia de restaurantes com sede em Jacksonville. Depois que o Honker Burguer entra em dificuldades financeiras em 1954, seus dois franqueados localizados em Miami, David Edgerton e James McLamore, compram a empresa.\r\n							Ao longo do prÃ³ximo meio sÃ©culo, a empresa iria mudar de administraÃ§Ã£o quatro vezes. Em 2 de setembro de 2010, foi anunciada a venda da totalidade das aÃ§Ãµes da empresa para o fundo de investimentos brasileiro chamado 3G Capital, que tem sede no Rio de Janeiro, por 3.26 bilhÃµes de dÃ³lares. Os novos proprietÃ¡rios prontamente iniciaram uma reestruturaÃ§Ã£o da empresa para reverter sua situaÃ§Ã£o. A 3G, junto com o parceiro Berkshire Hathaway, terminou por fundir-se com a companhia canadense de Tim Hortons sob os auspÃ­cios de uma nova sociedade com sede no CanadÃ¡, o Restaurant Brands International.\r\n							No final do ano de 2013, o setor administrativo do Honker Burguer informou que tinha mais de 13 000 restaurantes em 79 paÃ­ses; destes, 66% estÃ£o nos Estados Unidos e 99% sÃ£o franqueados e operados de acordo com seus novos proprietÃ¡rios. O HB privado tem usado historicamente diversas variaÃ§Ãµes de franqueamento para expandir suas operaÃ§Ãµes. A maneira pela qual a empresa licencia seus franqueados varia dependendo da regiÃ£o; algumas franquias sÃ£o regionais, conhecidos como master-franquias, responsÃ¡veis pela venda de franquia sublicenciadas em nome da empresa. O relacionamento do Honker Burguer com suas franquias nem sempre foi harmonioso. Brigas ocasionais tÃªm causado inÃºmeros problemas e, em vÃ¡rios casos, a relaÃ§Ã£o dos seus licenciados da empresa e degeneraram em processos judiciais.','CONQUISTAS','CONCURSO LOCAL - Melhor molho para sanduÃ­ches. 1954; CONCURSO LOCAL - Preparo mais rÃ¡pido de um sanduÃ­che. 1960; CONCURSO LOCAL - Melhor hamburguer vegetariano. 1961; CONCURSO ESTUDUAL - SanduÃ­che mais saboroso. 1954; CONCURSO NACIONAL - Melhor combinaÃ§Ã£o de lanches. 1954;','arquivos/honker1.jpg','arquivos/honker2.jpg','arquivos/honker3.jpg',1);
+/*!40000 ALTER TABLE `tblsobre` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tblsubcat`
+--
+
+DROP TABLE IF EXISTS `tblsubcat`;
+CREATE TABLE `tblsubcat` (
+  `idSubCat` int(11) NOT NULL AUTO_INCREMENT,
+  `idCategoria` int(11) DEFAULT NULL,
+  `subcat` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idSubCat`),
+  KEY `idCategoria_idx` (`idCategoria`),
+  CONSTRAINT `idCategoria` FOREIGN KEY (`idCategoria`) REFERENCES `tblcategorias` (`idCategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tblsubcat`
+--
+
+/*!40000 ALTER TABLE `tblsubcat` DISABLE KEYS */;
+INSERT INTO `tblsubcat` (`idSubCat`,`idCategoria`,`subcat`) VALUES 
+ (15,NULL,'Lanche Integral'),
+ (16,2,'Lanche Integral'),
+ (18,2,'Lanches Verdes'),
+ (19,2,'Lanches Light'),
+ (20,2,'Lanches Fitness'),
+ (21,3,'Lanches no Prato'),
+ (22,3,'Lanches 1K'),
+ (23,3,'Gordinhos Burguer'),
+ (24,3,'All the Burguer'),
+ (25,4,'Dogs no Prato'),
+ (26,4,'Dogão especial'),
+ (27,4,'Dogs Simples'),
+ (28,4,'Double Dogs'),
+ (30,5,'Shakes especial'),
+ (31,5,'Shakes simples'),
+ (32,5,'Double Shakes'),
+ (39,2,'Lanche Integral'),
+ (40,2,'Lanche Integral'),
+ (41,2,'Lanche Integral'),
+ (43,14,'corridas marcel 1');
+/*!40000 ALTER TABLE `tblsubcat` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
